@@ -75,7 +75,7 @@ hr.star-primary:after {
 
 header {
   text-align: center;
-  background-image: url(/img/ivory_pattern.jpg);
+  /*background-image: url(/img/ivory_pattern.jpg);*/
   background: #29abe2;
   color: white;
 }
