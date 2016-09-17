@@ -41,4 +41,10 @@
         });
     });
 
+    $("a[href*='#portfolioModal']").on('click', function(event) {
+      console.log("inside portfolioModal1:" + document.URL + "/" + $(this).attr('href'))
+      history.pushState(null, null, document.URL + "/" + $(this).attr('href'))
+      // event.preventDefault();
+    });    
+
 })(jQuery); // End of use strict
