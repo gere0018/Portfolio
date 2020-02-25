@@ -212,15 +212,23 @@ section.success {
 .portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
+  padding-bottom: 2rem;
+  background-color: #ffffff;
+  /*border: 1px solid #29abe2;*/
 }
+.portfolio .portfolio-item h4{
+  color: #333333;
+  text-align: center;
+  }
 .portfolio .portfolio-item .portfolio-link {
   display: block;
   position: relative;
   max-width: 400px;
   margin: 0 auto;
 }
+
 .portfolio .portfolio-item .portfolio-link .caption {
-  background: rgba(41,171,226,1);
+  background: #29abe2;
   position: absolute;
   width: 100%;
   height: 100%;
