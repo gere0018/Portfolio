@@ -11,10 +11,10 @@ body {
   overflow-x: hidden;
 }
 p {
-  font-size: 20px;
+  font-size: 2rem;
 }
 p.small {
-  font-size: 16px;
+  font-size: 1rem;
 }
 a,
 a:hover,
@@ -472,8 +472,12 @@ fieldset[disabled] .btn-success.active {
   border: none;
   min-height: 100%;
   padding: 100px 0;
-  text-align: center;
+  text-align: left;
 }
+.portfolio-modal .modal-content li {
+  font-size: 2rem;
+}
+
 .portfolio-modal .modal-content h2 {
   margin: 0;
   font-size: 3em;
