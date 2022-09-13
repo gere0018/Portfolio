@@ -42,18 +42,13 @@ const LicenseManagementModal = (props) => {
             <br/><img src="img/portfolio/LM-02.jpg" alt="Personas" className="img-responsive" />
             <br/><p>Based on the interviews, I created we set up three personas. We referred to them throughout the entire product development process.</p>
 
-
-
-
-
-            <br />
         </div>
       );
 }
 
 const DesignSystemModal = () => (
     <div className="col-md-8 col-md-offset-2">
-        <h2>Creating a UX team & a Design system
+        <h2>Creating a UX team and a Design system
             <br/> Case Study - Quest On Demand</h2>
         <div className="h-50"></div>
         <p>When I first joined Quest On Demand, it felt like I was the only UX designer. It took some digging to find out that we had some wonderful designers working 
@@ -126,6 +121,18 @@ const SpiriaModal = () => (
         <br />
         </div>
 );
+const AChubModal = () => (
+    <div className="col-md-8 col-md-offset-2">
+        <h2>Student support services application_ Design and development
+            <br/>Algonquin College</h2>
+        <div className="h-50"></div>
+        <p>ACHub” is an enterprise iPad application that I created for the AC Hub staff in August 2015. The staff uses the application to assist them in their various stations 
+            throughout Algonquin College. I volunteered to design and develop this app and chose Ionic Framework to give a native iOS look and feel to a Hybrid application.
+        </p>
+        <br /> <img src="img/portfolio/AChub-cover" alt="" className="img-responsive" />
+        <br />
+        </div>
+);
 
 const ModalComponent = () => {
     const [type, setType] = React.useState('')
@@ -137,15 +144,31 @@ const ModalComponent = () => {
 
     const demo02 = document.querySelector('#demo02')
     demo02.addEventListener('click', () => {
-        // setShowDemo01(true)
+        // setShowDemo02(true)
         setType('DESIGN_SYSTEM')
     })
-
+      
     const demo03 = document.querySelector('#demo03')
     demo03.addEventListener('click', () => {
-        // setShowDemo01(true)
+        // setShowDemo03(true)
         setType('SPIRIA')
     })
+    const demo04 = document.querySelector('#demo04')
+    demo04.addEventListener('click', () => {
+        // setShowDemo04(true)
+        setType('ACHUB')
+    })
+    const demo05 = document.querySelector('#demo05')
+    demo05.addEventListener('click', () => {
+        // setShowDemo05(true)
+        setType('TOUCHPLOW')
+    })
+    const demo06 = document.querySelector('#demo06')
+    demo06.addEventListener('click', () => {
+        // setShowDemo06(true)
+        setType('GARDENIA')
+    })
+
 
     switch(type){
         case "LICENSE_MANAGEMENT":
@@ -154,6 +177,12 @@ const ModalComponent = () => {
             return <DesignSystemModal />
         case "SPIRIA":
             return <SpiriaModal />
+        case "ACHUB":
+            return <AchubModal />
+        case "TOUCHPLOW":
+                return <TouchplowModal />
+        case "GARDENIA":
+            return <GardeniaModal />
         
         default:
             return null
