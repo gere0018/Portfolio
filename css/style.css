@@ -253,7 +253,7 @@ nav li {
 nav li a {
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #fcf8e3;
+    color: var(--white);
     font-size: 12px;
     font-weight: bold;
 }
@@ -312,6 +312,7 @@ a.active {
 .about-img-div img {
     margin: 0 auto;
 }
+
 
 .about-border {
     position: absolute;
@@ -714,8 +715,7 @@ fieldset {
     font-size: 15px;
     text-align: center;
     padding: 10px;
-    border: 2px solid #29abe2;
-    margin-top: 10px;
+    border: 2px solid var(--blue);
 }
 
 #error p {
@@ -761,7 +761,7 @@ fieldset {
 }
 
 .footerImage{
-    max-width: 280px;
+    max-width: 240px;
 }
 
 

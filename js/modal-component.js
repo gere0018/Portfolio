@@ -134,6 +134,13 @@ const AChubModal = () => (
         </div>
 );
 
+const TouchPlowModal = () => (
+    <div>Touch plow contents</div>
+)
+
+const GardeniaModal = () => (
+    <div>Gardenia app contents</div>
+)
 const ModalComponent = () => {
     const [type, setType] = React.useState('')
     
@@ -144,30 +151,29 @@ const ModalComponent = () => {
 
     const demo02 = document.querySelector('#demo02')
     demo02.addEventListener('click', () => {
-        // setShowDemo02(true)
         setType('DESIGN_SYSTEM')
     })
       
     const demo03 = document.querySelector('#demo03')
     demo03.addEventListener('click', () => {
-        // setShowDemo03(true)
         setType('SPIRIA')
     })
+
     const demo04 = document.querySelector('#demo04')
     demo04.addEventListener('click', () => {
-        // setShowDemo04(true)
         setType('ACHUB')
     })
+
     const demo05 = document.querySelector('#demo05')
     demo05.addEventListener('click', () => {
-        // setShowDemo05(true)
-        setType('TOUCHPLOW')
-    })
-    const demo06 = document.querySelector('#demo06')
-    demo06.addEventListener('click', () => {
-        // setShowDemo06(true)
         setType('GARDENIA')
     })
+
+    const demo06 = document.querySelector('#demo06')
+    demo06.addEventListener('click', () => {
+        setType('TOUCHPLOW')
+    })
+
 
 
     switch(type){
@@ -178,11 +184,11 @@ const ModalComponent = () => {
         case "SPIRIA":
             return <SpiriaModal />
         case "ACHUB":
-            return <AchubModal />
-        case "TOUCHPLOW":
-                return <TouchplowModal />
+            return <AChubModal />
         case "GARDENIA":
             return <GardeniaModal />
+        case "TOUCHPLOW":
+                return <TouchPlowModal />
         
         default:
             return null
