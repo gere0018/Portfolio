@@ -33,6 +33,13 @@ font-family: 'Open Sans', sans-serif;
 */
 
 
+/* Color variables */
+:root {
+    --blue: #1badad;
+    --white: #ffffff;
+  }
+
+
 /* typography
 ==================================================*/
 #my-name{
@@ -125,7 +132,7 @@ body {
     width: 100%;
     -webkit-animation: rotation 1s linear infinite;
     animation: rotation 1s linear infinite;
-    border: 2px solid #29abe2;
+    border: 2px solid var(--blue);
     border-top: 2px solid transparent;
     border-radius: 100%
 }
@@ -271,7 +278,7 @@ a:hover {
 }
 
 a.active {
-    color: #29abe2;
+    color: var(--blue);
 }
 
 
@@ -308,7 +315,7 @@ a.active {
 
 .about-border {
     position: absolute;
-    border: 10px solid #29abe2;
+    border: 10px solid  var(--blue);
     width: 400px;
     height: 400px;
     top: 28px;
@@ -374,11 +381,11 @@ a.active {
 .timeline-event:hover .timeline-event-icon {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    background-color: #29abe2;
+    background-color:  var(--blue);
 }
 
 .timeline-event:hover .timeline-event-thumbnail {
-    box-shadow: inset 40em 0 0 0 #29abe2;
+    box-shadow: inset 40em 0 0 0  var(--blue);
 }
 
 .timeline-event-copy {
@@ -413,7 +420,7 @@ a.active {
     transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    background-color: #29abe2;
+    background-color: var(--blue);
     outline: 10px solid #f3f3f3;
     display: block;
     margin: 0.5em 0.5em 0.5em -0.5em;
@@ -435,7 +442,7 @@ a.active {
     font-size: 12px;
     font-weight: bold;
     background-color: black;
-    box-shadow: inset 0 0 0 0em #29abe2;
+    box-shadow: inset 0 0 0 0em  var(--blue);
     display: inline-block;
     margin-bottom: 1.2em;
     padding: 0.25em 1em 0.2em 1em;
@@ -475,7 +482,7 @@ a.active {
 }
 
 .portfolio .categories-grid .categories ul li a.active {
-    background-color: #29abe2;
+    background-color: var(--blue);
     padding: 0px 20px;
     color: white;
     text-decoration: none;
@@ -498,7 +505,7 @@ a.active {
     left: 0px;
     height: 100%;
     width: 100%;
-    background-color: #29abe2;
+    background-color:  var(--blue);
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
     opacity: 0;
@@ -533,7 +540,7 @@ a.active {
 .portfolio_item .portfolio_item_hover .item_info em {
     font-style: normal;
     display: inline-block;
-    background-color: #29abe2;
+    background-color:  var(--blue);
     padding: 5px 20px;
     color: #fff;
     margin-top: 10px;
@@ -721,7 +728,7 @@ fieldset {
 }
 
 #submit {
-    background-color: #29abe2;
+    background-color:  var(--blue);
     color: #fff;
     padding: 10px 40px;
     border-radius: 0;
@@ -750,7 +757,7 @@ fieldset {
 }
 
 .social li a:hover {
-    color: #29abe2;
+    color:  var(--blue);
 }
 
 
