@@ -36,14 +36,14 @@ font-family: 'Open Sans', sans-serif;
 /* Color variables */
 :root {
     --blue: #1badad;
-    --white: #ffffff;
+    --white: #f5f5dc;
   }
 
 
 /* typography
 ==================================================*/
 #my-name{
-    color: #fcf8e3;
+    color: var(--white);
     font-size: 32px;
     font-weight: 500;
     margin-left: 8px;
