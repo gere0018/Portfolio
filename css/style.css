@@ -760,6 +760,10 @@ fieldset {
     color:  var(--blue);
 }
 
+.footerImage{
+    max-width: 280px;
+}
+
 
 /* Responsive media queries
 ==================================================*/
