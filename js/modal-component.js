@@ -112,33 +112,42 @@ const DesignSystemModal = () => (
 
 const SpiriaModal = () => (
     <div className="col-md-8 col-md-offset-2">
-        <h2>Small buisness projects _ UX consultant
-            <br/>Spiria Digital</h2>
+        <h2>Spiria Digital</h2>
+        <h4>UX Designer &amp; consultant</h4>
         <div className="h-50"></div>
         <h4>Aidexpress</h4>
-        <p>When I first joined Quest On Demand, it felt like I was the only UX designer. It took some digging to find out that we had some wonderful designers working 
-            quietly and independently around the world. After reviewing the product that I was hired to enhance, the biggest problem that stood out for me is inconsistency. 
-            The modules and features in On Demand looked and behaved in a disconnected manner as if they didn’t belong together and this was a simple reflection of the design team. 
-            People were disconnected, they designed features required for their modules without being aware of the big picture of the product. My mission therefore become clear, I had
-            to connect the people, bring a common vision and create a design team that worked together, and eventually create a design system of reusable components to bring consistency 
-            across all modules. This mission was accomplished within the first year of my joining Quest. I needed to advocate to senior management 
-        </p>
-        <h4>It's all about the people</h4>
-        <br /> <img src="img/portfolio/DS-01.jpg" alt="On demand UX/UI conference" className="img-responsive" />
-        <br />
-        </div>
+        <p>Content under construction</p>
+    
+    </div>
 );
 const AChubModal = () => (
-    <div className="col-md-8 col-md-offset-2">
-        <h2>Student support services application_ Design and development
-            <br/>Algonquin College</h2>
+    <div className="col-lg-9 col-md-offset-2">
+        <h2>Algonquin College Student support services</h2>
+        <h4>Mobile App Designer &amp; Developer</h4>
         <div className="h-50"></div>
-        <p>ACHub” is an enterprise iPad application that I created for the AC Hub staff in August 2015. The staff uses the application to assist them in their various stations 
-            throughout Algonquin College. I volunteered to design and develop this app and chose Ionic Framework to give a native iOS look and feel to a Hybrid application.
+        <p>ACHub is the name of the student support services department in Algonquin college. While a student on campus, I worked at the AC Hub part time. During the summer
+             when I joined them full time, my busy-bee nature drove me to volunteer and create this AC Hub application. The target audience was employees like myself who sat at desks across the college.
+             Our main goal was to help students with all types of questions. Many times the inquiries we received were hidden on the college website somewhere and not accessible. So the main purpose 
+             of the AC Hub App was to provide a forum for all that knowledge. I created the app in August 2015 and today it is still used by the staff after an update I pushed in late 2016.
         </p>
-        <br /> <img src="img/portfolio/AChub-cover" alt="" className="img-responsive" />
-        <br />
-        </div>
+        <br /> <img src="img/portfolio/AChub-cover.jpg" alt="" className="img-responsive" />
+        <div className="h-50"></div>
+        <h4>Design Process</h4>
+        <p>In order to understand what is needed, I did some intial user interviews with my colleagues and head of department. I collected and defined requirements and user needs, created basic information
+             architecture and dived into low fidelity wireframes.  Most of our inquiries were related to directions, contacts on campus, and we also has survey to fill about all inquiries we received. Accordingly,
+              I created different sections in the app that addressed these concerns: surverys, FAQs, College directory,
+             way finder and upcoming events. Since Ipad was the tool available to us, I decided to give the app a native iOS look by using the Ionic Framework.</p>
+        <p>I dove into coding, and created this simple interface that was very helpful to us staff for the years to come.</p>
+        <div className="h-50"></div>
+        <h4>Application Demo</h4>
+        <br/>
+        <iframe width="900" height="506" src="https://www.youtube.com/embed/ZM6T-mO5F4o" frameborder="0" allowfullscreen=""></iframe>
+        <div className="h-50"></div>
+        <h4>Conclusion</h4>
+        <p>I was a passionate student eager to learn, and this app allowed me to learn so much as I designed and coded and tested on my own. I was the target audience and the buisness owner. It was a productive summer
+             for me but the result is still a very valid tool for the ACHub staff. </p>
+        <div className="h-50"></div>
+    </div>
 );
 
 const TouchPlowModal = () => (
