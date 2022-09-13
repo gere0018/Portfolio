@@ -151,11 +151,20 @@ const AChubModal = () => (
 );
 
 const TouchPlowModal = () => (
-    <div>Touch plow contents</div>
+<div className="col-md-8 col-md-offset-2">
+    <h2>TouchPlow - Snow removal services</h2>
+    <h4>UX/UI Designer</h4>
+    <div className="h-50"></div>
+    <p>The app is available on Apple and Google stores. <a href="https://touchplow.com/" target="_">Application website</a></p>
+    <p>Content under construction</p>
+
+</div>
 )
 
 const GardeniaModal = () => (
-    <div>Gardenia app contents</div>
+    <div>Gardenia app contents
+        <p>Content under construction</p>
+    </div>
 )
 const ModalComponent = () => {
     const [type, setType] = React.useState('')
