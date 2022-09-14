@@ -14,9 +14,11 @@ const LicenseManagementModal = (props) => {
             
             
             <h4>Project overview</h4>
+            <br /> <img src="img/portfolio/LM-IA.png" alt="License management information architecture" className="img-responsive" />
+            <br/>
             <p>This project was a new module that I designed for Quest On Demand from Inception to implementation. We created the MVP in 2019 and added more details and features in the following years.
-                License management is a software as a service tool designed for Office 365 admins. Its main purpose is to give Admins full exposure and control of their various License pools, their cost,
-                use and availability. We wanted to show admins the information they needed that wasn’t readily accessible in the Microsoft admin centre in order to help them save costs and make informed
+                License management is a Software As A Service tool designed for Office 365 admins. Its main purpose is to give admins full visibility and control of their various License pools, costs,
+                availability and usage. We wanted to show admins the information they needed that wasn’t readily accessible in the Microsoft admin centre in order to help them save costs and make informed
                 decisions. As the sole designer for this module I did the following:
             </p>
             <ul>
@@ -24,27 +26,67 @@ const LicenseManagementModal = (props) => {
                 <li>Created realistic personas that we referred to throughout the development of the product</li>
                 <li>Sketched solutions in low fidelity wireframes using Balsamic mockups to define the MVP and validate  requirements</li>
                 <li>Created high fidelity interactive prototypes in Sketch and InVision that I further tested with clients, sales and support employees.</li>
-                <li>Conducted live usability testing sessions with real clients and produced reports with findings and required changes</li>
-                <li>Versioned all my high fidelity designs with Abstract to make them accessible for collaboration</li>
-                <li>Created documented handoff files for developers and guided them throughout the implementation lifecycle</li>
+                <li>Conducted usability testing sessions with real clients and produced reports with findings and required changes</li>
+                <li>Versioned all my high fidelity designs with Abstract to make them accessible for branching and collaboration</li>
+                <li>Created documented handoff files for developers and guided them throughout the implementation phase </li>
             </ul>
-            <br /> <img src="img/portfolio/LM-01.jpg" alt="On demand UX/UI conference" className="img-responsive" />
+            
             <br />
             <h4>Understanding user needs and requirements</h4>
             <p>The initial research phase for the product consisted of:</p>
             <ul>
                 <li>User interviews to better understand needs and frustrations</li>
-                <li>Workshops with Microsoft experts, solution architects and product managers to understand what Microsoft offered and the business requirements for our solution</li>
+                <li>Workshops with Microsoft experts, solution architects and product managers to understand what Microsoft provided and Quest business requirements for our solution</li>
                 <li>Detailed review and inventory of the Microsoft admin centre</li>
                 <li>Competitor research of businesses that offered similar solutions</li>
             </ul>
+            <br/><img src="img/portfolio/LM-Personas.jpg" alt="Personas" className="img-responsive" />
+            <br/>
+            <h4>User interviews &amp; Personas</h4>
             <p>I conducted interviews with 10 license administrators in various fields. I asked a set of questions that helped me better define what they needed to see and what they
-                 couldn't access. Microsoft had an admin centre, but it wasn’t a priority for them to show costs of unused licenses. User needs surpassed what was available which gave
-                  Quest the opportunity to fill the gap as a Microsoft partner. A CIBC senior administrator clearly expressed “Licenses are where the money is, we need more visibility 
-                  to that”.
+                 couldn't access. Microsoft had an admin centre, but it wasn’t a priority for them to show costs of unused licenses. User needs surpassed what was available from Microsoft which gave
+                  Quest the opportunity to fill the gap as a Microsoft partner. A CIBC senior administrator avidly expressed “Licenses are where the money is, please give me more visibility 
+                  to my licenses”.
             </p>
-            <br/><img src="img/portfolio/LM-02.jpg" alt="Personas" className="img-responsive" />
-            <br/><p>Based on the interviews, I created we set up three personas. We referred to them throughout the entire product development process.</p>
+            <p>Based on the interviews, I created three personas. We referred to them with stakeholders throughout the product development process.</p>
+            <br/>
+            <h4>Information Architecture and low fidelity wireframes</h4>
+            <p>After defining the user needs and business requirements, the next step was to create a high level architecture for the product. Quest had Microsoft experts called MVPs that had
+            incredible expertise on all things Microsoft. I had intensive workshops with Microsoft MVPs who provided a wealth of knowledge to fill in the gaps, answer my questions,
+            and validate the solution before we took it to high fidelity.
+            </p>
+            <br/><img src="img/portfolio/LM-mockups.jpg" alt="wireframes" className="img-responsive" />
+            <br/>
+            <h4>High fidelity interactive prototypes &amp; usability testign</h4>
+            <p>After validating the wireframes with internal teams and product managers, I had the go ahead to move to high fidelity. For me, this is usually a very exciting part of the design process. 
+              However, due to the nature of the product, this wasn't a fun dribble project where aesthetics took priority. I had to make sense of very complex requirements and stick to established patterns from old designs.
+              Eventually, I found some balance and created an effective and clean interface. The pages were connected together with Invision to create a realistic interactive prototype that I used for demos and usability-testing sessions.
+            </p>
+            <h4>Summary Dashboard</h4>
+            <p>This is the main dashboard for administrators using License Management. It exposed the most critical license data they needed to see with summaries and data visualisations connected to their licenses and users. </p>
+            <br/><img src="img/portfolio/LM-summary.jpg" alt="summary page" className="img-responsive" />
+            <br/>
+            <h4>Cost Dashboard</h4>
+            <p>As the name suggests, this dashboard was fully focused on cost details and gave users the ability to customize the rates at which they purchased licenses from Microsoft to see more accurate estimations.</p>
+            <br/><img src="img/portfolio/LM-cost.jpg" alt="cost page" className="img-responsive" />
+            <br/>
+            <h4>Users page</h4>
+            <p>This was the list of users with licenses and products. Admins had the ability to search for users, select and perform single or batch actions of license assignments.</p>
+            <br/><img src="img/portfolio/LM-users.jpg" alt="users page" className="img-responsive" />
+            <br/>
+            <h4>Usability testing</h4>
+            <p>In addition to testing internally, with experts and employees that match our target audience, we successfully recruited clients that expressed interest in testing our feature. I prepared a Usability testing document that defined our goals,
+                what we wanted to learn and created scenarios for users to follow in order to discover if our solution enabled them to acheive their goals. I tested five admins from goverment and private sectors and generated a usability report with suggestions and conclusions.
+                We implemented most of the key discoveries and postponed some minor issues that didn't affect our MVP. </p>
+            <br/><img src="img/portfolio/LM-report.jpg" alt="users page" className="img-responsive" />
+            <br/>
+            <h4>Implementation</h4>
+            <p>I supported the developers at every step of handoff and implementation. When developing the product, we always discovered unknowns that we coudln't forsee. I would go back to the drawing board and find solutions or alternatives. We spent about 2 years working on this product
+                and I truly hope it brings value to the life of Office 365 administrators.
+            </p>
+            <br/>
+
+
 
         </div>
       );
