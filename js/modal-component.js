@@ -165,7 +165,7 @@ const SpiriaModal = () => (
         <h4>Aidexpress</h4>
         <p><a href="https://www.aidexpress.ca/" target="_">Aidexpress</a> is fantastic small business in Gatineau, Quebec that is focused on providing services for seniors by making providers accessible to them. When I first saw the interface, our team was assigned to create new features for the client.
               I raised the concern that major issues needed to be fixed from a user experience perspective before bringing in new features. I lobbied for the opportunity to audit the platform and share my vision with the client. This slide contains some of the priority items I higlighted in the client's presentation.</p>
-        <img src="img/portfolio/sp-Aidexpress-1.jpg" alt="Aidexpress presentation" className="img-responsive" />
+        <img src="img/portfolio/SP-aidexpress-1.jpg" alt="Aidexpress presentation" className="img-responsive" />
         <br/>
         <p>After the presentation, monsieur and madame Gangon were fully convinced of the need to optimize their platform with UX. The audit exposed problems they knew but couldn't logically define. Our team redesigned their website and continued to support their business by creating and admin center and other features.</p>  
         <br/> 
@@ -185,7 +185,7 @@ const SpiriaModal = () => (
         <br/>
         <h4>Mobile projects</h4>
         <br/>
-        <img src="img/portfolio/Sp-mobile-projects.jpg" alt="Mobile Projects" className="img-responsive" />
+        <img src="img/portfolio/SP-mobile-projects.jpg" alt="Mobile Projects" className="img-responsive" />
         <br/>
         <p>I had the opportunity to design multiple mobile projects that are under NDA. This includes: </p>
             <ul>
