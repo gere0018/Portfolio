@@ -786,10 +786,6 @@ fieldset {
         font-size: 50px;
         line-height: 50px;
     }
-    #home,
-    .disply-table {
-        height: 600px;
-    }
     .about-border {
         width: 265px;
     }
