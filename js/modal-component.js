@@ -232,8 +232,20 @@ const TouchPlowModal = () => (
     <h2>TouchPlow - Snow removal services</h2>
     <h4>UX/UI Designer</h4>
     <div className="h-50"></div>
-    <p>The app is available on Apple and Google stores. <a href="https://touchplow.com/" target="_">Application website</a></p>
-    <p>Content under construction</p>
+    <p>I was approached as a freelancer to design this app while still a student at Algonquin College. We began with several discovery workshops with the client to collect business goals and requirements.
+       His vision was to make this app the "Uber" of snow removal and lawn moving. He wanted to create native apps for both iOS and Android. At the time the app name was SnowMowz as it was intended to switch between
+        lawn moving and snow plowing services. Later on the name was change to TouchPlow for the MVP.After defining the requirements and two primary personas of the application  
+       (the home owner and the service provider), I started defining users' journeys and information architecture. Then, dived into the platforms design-guidelines making sure I followed Apple and google specifications
+        for navigation, styles and components. The finished designs were tested with volunteers that matched our target audience and accordingly changes were implemented.
+       <br/> 
+       The visual designs presented here are of course very old since they were created in 2015 but they reflected Apple and google interfaces and guidelines at that time.
+       The designs I have have the old logo of . Below are a few example flows.
+       The app is currently available on Apple and Google stores and can be accessed on the . <a href="https://touchplow.com/" target="_">application website</a></p>
+    <h4>iOS Login &amp; Homepage</h4>
+    <img src="img/portfolio/Touchplow-ios-login.jpg" alt="touchplow ios login" className="img-responsive" />
+    <h4>Providers' Interface</h4>
+    <img src="img/portfolio/Touchplow-ios-provider.jpg" alt="touchplow ios provider" className="img-responsive" />
+
 
 </div>
 )
