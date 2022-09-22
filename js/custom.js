@@ -13,6 +13,8 @@ $(window).load(function () {
 $(document).ready(function () {
     "use strict";
 
+    const currentURL = window.location.href;
+
     // scroll menu
     var sections = $('.section'),
         nav = $('.navbar-fixed-top,footer'),
@@ -43,6 +45,7 @@ $(document).ready(function () {
             scrollTop: $(id).offset().top - nav_height + 2
         }, 600);
 
+        window.history.replaceState(null, null, '/'+ id)
         return false;
     });
 
@@ -52,11 +55,20 @@ $(document).ready(function () {
         $(".navbar-fixed-top").addClass("bg-nav");
     } else {
         $(".navbar-fixed-top").removeClass("bg-nav");
+        // if I am at the top of a demo page, add invisible class
+        if(currentURL.indexOf('/projects/demo')!== -1) {
+            $(".navbar-fixed-top").addClass('invisible')
+        }
     }
     $(window).scroll(function () {
         if ($(window).scrollTop() > 80) {
+            $(".navbar-fixed-top").removeClass('invisible')
             $(".navbar-fixed-top").addClass("bg-nav");
         } else {
+        // if I am at the top of a demo page, add invisible class
+        if(currentURL.indexOf('/projects/demo')!== -1) {
+            $(".navbar-fixed-top").addClass('invisible')
+        }            
             $(".navbar-fixed-top").removeClass("bg-nav");
         }
     });
@@ -104,7 +116,8 @@ $(document).ready(function () {
     });
 
     //animatedModal
-    $("#demo01,#demo02,#demo03,#demo04,#demo05,#demo06,#demo07,#demo08,#demo09").animatedModal();
+    // TODO: delete this line
+    // $("#demo01,#demo02,#demo03,#demo04,#demo05,#demo06,#demo07,#demo08,#demo09").animatedModal();
 
     // Contact Form 	
 
