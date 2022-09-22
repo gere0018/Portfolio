@@ -272,7 +272,7 @@ a:focus {
 }
 
 a:hover {
-    color: #29abe2;
+    color: var(--blue);
     text-decoration: none;
 }
 
