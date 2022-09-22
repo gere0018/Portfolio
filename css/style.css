@@ -451,6 +451,9 @@ a.active {
 
 /* projects section
 ==================================================*/
+.demo {
+    /* margin-top: 85px; */
+}
 
 #projects {
     padding: 100px 0;
