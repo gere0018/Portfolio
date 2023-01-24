@@ -752,6 +752,9 @@ fieldset {
 .social li a:hover {
     color:  var(--blue);
 }
+.adp {
+    max-width: 28px;
+}
 
 .footerImage{
     max-width: 240px;
