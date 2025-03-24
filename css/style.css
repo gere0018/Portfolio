@@ -54,6 +54,9 @@ font-family: 'Open Sans', sans-serif;
     
 }
 
+#my-img{
+    max-width: 533px;
+}
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 80px;
