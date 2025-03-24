@@ -96,10 +96,6 @@ body {
 
 /* Videos
 ==================================================*/
-.video-container{
-    margin-right: 24px;
-    margin-top: 24px;
-}
 .video{
     border-radius: 16px;
     -webkit-filter: grayscale(100%);
