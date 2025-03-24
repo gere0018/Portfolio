@@ -43,7 +43,7 @@ font-family: 'Open Sans', sans-serif;
 /* typography
 ==================================================*/
 #my-name {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Tangerine', serif;
     color: var(--white);
     font-size: 33px;
     font-weight: 500;
@@ -55,7 +55,7 @@ font-family: 'Open Sans', sans-serif;
 }
 
 #my-img{
-    max-width: 533px;
+    max-width: 333px;
 }
 h1 {
     font-family: 'Playfair Display', serif;
