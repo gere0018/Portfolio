@@ -93,6 +93,11 @@ body {
     height: 50px;
 }
 
+.video-container{
+    border-radius: 24px;
+    margin: 32px;
+}
+
 
 /* preloader
 ==================================================*/
