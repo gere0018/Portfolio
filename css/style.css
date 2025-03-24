@@ -93,9 +93,15 @@ body {
     height: 50px;
 }
 
+
+/* Videos
+==================================================*/
 .video-container{
-    border-radius: 24px;
     margin: 32px;
+}
+.video{
+    border-radius: 16px;
+
 }
 
 
