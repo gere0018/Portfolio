@@ -43,7 +43,7 @@ font-family: 'Open Sans', sans-serif;
 /* typography
 ==================================================*/
 #my-name {
-    font-family: 'Tangerine', serif;
+    font-family: 'Playfair Display', serif;
     color: var(--white);
     font-size: 33px;
     font-weight: 500;
@@ -51,6 +51,7 @@ font-family: 'Open Sans', sans-serif;
 }
 #my-title{
     color: var(--white);
+
     
 }
 
@@ -91,6 +92,27 @@ body {
 
 .h-50 {
     height: 50px;
+}
+/* about section
+==================================================*/
+
+#about {
+    padding: 100px 0;
+}
+
+.about-img-div img {
+    margin: 0 auto;
+}
+
+
+.about-border {
+    position: absolute;
+    border: 10px solid var(--blue);
+    width: 400px;
+    height: 400px;
+    top: 28px;
+    left: 108px;
+    z-index: 1
 }
 
 
@@ -327,27 +349,6 @@ a.active {
 }
 
 
-/* about section
-==================================================*/
-
-#about {
-    padding: 100px 0;
-}
-
-.about-img-div img {
-    margin: 0 auto;
-}
-
-
-.about-border {
-    position: absolute;
-    border: 10px solid var(--blue);
-    width: 400px;
-    height: 400px;
-    top: 28px;
-    left: 108px;
-    z-index: 1
-}
 
 
 /* experience section
