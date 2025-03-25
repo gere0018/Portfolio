@@ -38,7 +38,9 @@ font-family: 'Open Sans', sans-serif;
     --blue: #1badad;
     --white: #f5f5dc;
 }
-
+.w-100{
+    width: 100%;
+}
 
 /* typography
 ==================================================*/
