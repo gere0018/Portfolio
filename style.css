@@ -1,0 +1,667 @@
+.desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: #edf8f9;
+}
+
+.desktop .intro-section {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 0px 0px 80px;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    display: flex;
+    position: relative;
+}
+
+.desktop .intro {
+    flex-direction: column;
+    width: 486px;
+    align-items: flex-start;
+    gap: 8px;
+    display: flex;
+    position: relative;
+}
+
+.desktop .content {
+    flex-direction: column;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+}
+
+.desktop .title {
+    width: 588px;
+    margin-right: -102.00px;
+    color: var(--variable-collection-brand-black);
+    font-size: var(--title-font-size);
+    position: relative;
+    margin-top: -1.00px;
+    font-family: var(--title-font-family);
+    font-weight: var(--title-font-weight);
+    letter-spacing: var(--title-letter-spacing);
+    line-height: var(--title-line-height);
+    font-style: var(--title-font-style);
+}
+
+.desktop .text {
+    width: 520px;
+    height: 152px;
+    margin-right: -34.00px;
+    font-family: var(--body-lg-font-family);
+    font-weight: var(--body-lg-font-weight);
+    color: var(--variable-collection-brand-gray);
+    font-size: var(--body-lg-font-size);
+    line-height: var(--body-lg-line-height);
+    position: relative;
+    letter-spacing: var(--body-lg-letter-spacing);
+    font-style: var(--body-lg-font-style);
+}
+
+.desktop .buttons {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 12px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.desktop .button {
+    all: unset;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 8px 24px;
+    flex: 0 0 auto;
+    background-color: var(--variable-collection-brand-primary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+}
+
+.desktop .text-wrapper {
+    width: fit-content;
+    font-family: var(--buttons-font-family);
+    font-weight: var(--buttons-font-weight);
+    color: var(--variable-collection-brand-black);
+    font-size: var(--buttons-font-size);
+    line-height: var(--buttons-line-height);
+    white-space: nowrap;
+    position: relative;
+    letter-spacing: var(--buttons-letter-spacing);
+    font-style: var(--buttons-font-style);
+}
+
+.desktop .div-wrapper {
+    all: unset;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 12px 24px;
+    flex: 0 0 auto;
+    border: 1px solid;
+    border-color: var(--variable-collection-brand-black);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+}
+
+.desktop .div {
+    width: fit-content;
+    margin-top: -4.00px;
+    margin-bottom: -2.00px;
+    font-family: var(--buttons-font-family);
+    font-weight: var(--buttons-font-weight);
+    color: var(--variable-collection-brand-black);
+    font-size: var(--buttons-font-size);
+    line-height: var(--buttons-line-height);
+    white-space: nowrap;
+    position: relative;
+    letter-spacing: var(--buttons-letter-spacing);
+    font-style: var(--buttons-font-style);
+}
+
+.desktop .arrow {
+    position: absolute;
+    width: 153px;
+    height: 205px;
+    top: 486px;
+    left: 526px;
+}
+
+.desktop .main-image {
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    height: 629px;
+    margin-left: -40.43px;
+    object-fit: cover;
+}
+
+.desktop .about-me-section {
+    align-items: center;
+    gap: 80px;
+    padding: 80px;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.desktop .title-2 {
+    width: 255.52px;
+    color: var(--font-high-emphasis);
+    font-size: var(--title-font-size);
+    position: relative;
+    margin-top: -1.00px;
+    font-family: var(--title-font-family);
+    font-weight: var(--title-font-weight);
+    letter-spacing: var(--title-letter-spacing);
+    line-height: var(--title-line-height);
+    font-style: var(--title-font-style);
+}
+
+.desktop .content-2 {
+    height: 581px;
+    justify-content: center;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+}
+
+.desktop .image-collage {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+    margin-bottom: -1.86px;
+    margin-left: -11.15px;
+}
+
+.desktop .team {
+    position: relative;
+    width: 334px;
+    height: 269px;
+}
+
+.desktop .img-row {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    flex: 0 0 auto;
+    margin-top: -56px;
+}
+
+.desktop .guitar {
+    position: relative;
+    width: 196.42px;
+    height: 223.54px;
+}
+
+.desktop .gardening {
+    position: relative;
+    width: 203.42px;
+    height: 212.76px;
+    margin-left: -48px;
+}
+
+.desktop .children {
+    position: relative;
+    width: 337.6px;
+    height: 188.95px;
+    margin-top: -56px;
+    object-fit: cover;
+}
+
+.desktop .about-me-text {
+    width: 739px;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: -1.00px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.desktop .div-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+.desktop .text-wrapper-2 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1.00px;
+    font-family: var(--header-font-family);
+    font-weight: var(--header-font-weight);
+    color: var(--variable-collection-brand-primary);
+    font-size: var(--header-font-size);
+    letter-spacing: var(--header-letter-spacing);
+    line-height: var(--header-line-height);
+    font-style: var(--header-font-style);
+}
+
+.desktop .p {
+    position: relative;
+    align-self: stretch;
+    font-family: var(--body-sm-font-family);
+    font-weight: var(--body-sm-font-weight);
+    color: #000000;
+    font-size: var(--body-sm-font-size);
+    letter-spacing: var(--body-sm-letter-spacing);
+    line-height: var(--body-sm-line-height);
+    font-style: var(--body-sm-font-style);
+}
+
+.desktop .projects-section {
+    display: flex;
+    flex-direction: column;
+    width: 1280px;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    padding: 0px 0px 80px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.desktop .title-3 {
+    width: fit-content;
+    color: var(--font-high-emphasis);
+    font-size: var(--title-font-size);
+    white-space: nowrap;
+    position: relative;
+    margin-top: -1.00px;
+    font-family: var(--title-font-family);
+    font-weight: var(--title-font-weight);
+    letter-spacing: var(--title-letter-spacing);
+    line-height: var(--title-line-height);
+    font-style: var(--title-font-style);
+}
+
+.desktop .project-card {
+    width: 1022px;
+    height: 524px;
+    align-items: flex-start;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0px 12px 12px #00000040;
+    display: flex;
+    position: relative;
+}
+
+.desktop .project-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 80px 32px;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    background-color: var(--variable-collection-white);
+    display: flex;
+    position: relative;
+}
+
+.desktop .title-4 {
+    width: fit-content;
+    color: var(--variable-collection-brand-black);
+    font-size: var(--project-title-font-size);
+    white-space: nowrap;
+    position: relative;
+    margin-top: -1.00px;
+    font-family: var(--project-title-font-family);
+    font-weight: var(--project-title-font-weight);
+    letter-spacing: var(--project-title-letter-spacing);
+    line-height: var(--project-title-line-height);
+    font-style: var(--project-title-font-style);
+}
+
+.desktop .description {
+    position: relative;
+    align-self: stretch;
+    font-family: var(--body-sm-font-family);
+    font-weight: var(--body-sm-font-weight);
+    color: var(--variable-collection-brand-gray);
+    font-size: var(--body-sm-font-size);
+    letter-spacing: var(--body-sm-letter-spacing);
+    line-height: var(--body-sm-line-height);
+    font-style: var(--body-sm-font-style);
+}
+
+.desktop .button-2 {
+    all: unset;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 8px 24px;
+    background-color: var(--variable-collection-brand-primary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+}
+
+.desktop .img {
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    object-fit: cover;
+}
+
+.desktop .title-5 {
+    width: fit-content;
+    margin-left: -8.00px;
+    margin-right: -8.00px;
+    color: var(--variable-collection-brand-black);
+    font-size: var(--project-title-font-size);
+    white-space: nowrap;
+    position: relative;
+    margin-top: -1.00px;
+    font-family: var(--project-title-font-family);
+    font-weight: var(--project-title-font-weight);
+    letter-spacing: var(--project-title-letter-spacing);
+    line-height: var(--project-title-line-height);
+    font-style: var(--project-title-font-style);
+}
+
+.desktop .testimonials {
+    flex-direction: column;
+    width: 1280px;
+    justify-content: center;
+    gap: 80px;
+    padding: 80px;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.desktop .div-3 {
+    width: 1024px;
+    height: 329px;
+    gap: 32px;
+    padding: 32px 64px;
+    background-color: #ffffff;
+    border-radius: 32px;
+    overflow: hidden;
+    border: 1px solid;
+    border-color: #05d6e9;
+    box-shadow: 2px 4px 4px #00000040;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.desktop .img-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.desktop .img-2 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.desktop .frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    margin-top: -7.50px;
+    margin-bottom: -7.50px;
+}
+
+.desktop .text-2 {
+    align-self: stretch;
+    margin-top: -1.00px;
+    font-family: var(--header-font-family);
+    font-weight: var(--header-font-weight);
+    color: var(--variable-collection-brand-primary);
+    font-size: var(--header-font-size);
+    text-align: center;
+    line-height: var(--header-line-height);
+    position: relative;
+    letter-spacing: var(--header-letter-spacing);
+    font-style: var(--header-font-style);
+}
+
+.desktop .text-3 {
+    align-self: stretch;
+    font-family: var(--body-xs-font-family);
+    font-weight: var(--body-xs-font-weight);
+    color: #000000;
+    font-size: var(--body-xs-font-size);
+    text-align: center;
+    line-height: var(--body-xs-line-height);
+    position: relative;
+    letter-spacing: var(--body-xs-letter-spacing);
+    font-style: var(--body-xs-font-style);
+}
+
+.desktop .frame-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+}
+
+.desktop .contact-me {
+    display: flex;
+    height: 704px;
+    gap: 80px;
+    padding: 80px 0px 0px;
+    align-self: stretch;
+    width: 100%;
+    background-color: #edf8f9;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.desktop .section-title {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1.00px;
+    font-family: var(--title-font-family);
+    font-weight: var(--title-font-weight);
+    color: var(--font-high-emphasis);
+    font-size: var(--title-font-size);
+    text-align: center;
+    letter-spacing: var(--title-letter-spacing);
+    line-height: var(--title-line-height);
+    font-style: var(--title-font-style);
+}
+
+.desktop .footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px;
+    position: relative;
+    flex: 1;
+    align-self: stretch;
+    width: 100%;
+    flex-grow: 1;
+    background-color: var(--variable-collection-brand-black);
+}
+
+.desktop .avatar-copyright {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.desktop .nehmat-avatar {
+    position: relative;
+    width: 262px;
+    height: 262px;
+    object-fit: cover;
+}
+
+.desktop .text-wrapper-3 {
+    position: relative;
+    width: fit-content;
+    font-family: var(--body-md-font-family);
+    font-weight: var(--body-md-font-weight);
+    color: #ffffff;
+    font-size: var(--body-md-font-size);
+    letter-spacing: var(--body-md-letter-spacing);
+    line-height: var(--body-md-line-height);
+    white-space: nowrap;
+    font-style: var(--body-md-font-style);
+}
+
+.desktop .contact-info {
+    display: inline-flex;
+    gap: 48px;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.desktop .button-3 {
+    all: unset;
+    box-sizing: border-box;
+    height: 54px;
+    padding: 8px 24px;
+    background-color: var(--variable-collection-brand-primary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 10px;
+}
+
+.desktop .text-4 {
+    width: fit-content;
+    font-family: "Nunito-Bold", Helvetica;
+    font-weight: 700;
+    color: var(--variable-collection-brand-black);
+    font-size: 24px;
+    line-height: 34px;
+    white-space: nowrap;
+    position: relative;
+    letter-spacing: 0;
+}
+
+.desktop .social {
+    display: inline-flex;
+    align-items: center;
+    gap: 48px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.desktop .youtube {
+    position: relative;
+    width: 64px;
+    height: 45px;
+}
+
+.desktop .img-3 {
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+
+.desktop .adplist {
+    position: relative;
+    width: 64px;
+    height: 58px;
+    object-fit: cover;
+}
+
+.desktop .header {
+    display: flex;
+    width: 1280px;
+    height: 88px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--variable-collection-brand-black);
+}
+
+.desktop .nehmat-avatar-sm {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}
+
+.desktop .navbar {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 40px;
+    position: relative;
+    flex: 0 0 auto;
+}
+
+.desktop .about {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: var(--header-font-family);
+    font-weight: var(--header-font-weight);
+    color: var(--variable-collection-brand-primary);
+    font-size: var(--header-font-size);
+    letter-spacing: var(--header-letter-spacing);
+    line-height: var(--header-line-height);
+    white-space: nowrap;
+    font-style: var(--header-font-style);
+}
+
+.desktop .text-wrapper-4 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1.00px;
+    font-family: var(--header-font-family);
+    font-weight: var(--header-font-weight);
+    color: #ffffff;
+    font-size: var(--header-font-size);
+    letter-spacing: var(--header-letter-spacing);
+    line-height: var(--header-line-height);
+    white-space: nowrap;
+    font-style: var(--header-font-style);
+}
