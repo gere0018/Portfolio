@@ -26,3 +26,11 @@ Google Fonts supplies typefaces, with system fallbacks. Reduced-motion preferenc
 ## Verification
 
 Checked desktop and mobile layouts, section anchor targets, image loading, native disclosures, removal of comparison tabs, and browser errors. No horizontal overflow or browser errors were observed in the checked layouts.
+
+## Continuous ocean experience
+
+The homepage uses `img/ocean-of-ideas.png` as a continuous ocean environment. `css/ocean.css` adds scroll-driven depth, turquoise light, drifting particles, and translucent content panels. The centered avatar still switches to the real portrait. The former opening exploration bubbles have been removed.
+
+Three animated jellyfish reveal draft insights about leadership, human judgment, and shared learning. Their buttons support keyboard interaction and Escape closes the insight. Visitors can pause motion, and system reduced-motion preferences are respected.
+
+Verified the ocean opening and content visually, image loading, insight reveal, desktop/mobile horizontal fit, and pause/resume state. The insight copy is provisional for editorial refinement.
