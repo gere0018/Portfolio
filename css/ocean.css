@@ -10,3 +10,69 @@ body.ocean-site{background:#041622;color:#e6fcff;--dive-position:25%;--dive-scal
 .ocean-site.motion-paused *{animation-play-state:paused!important}.ocean-site.motion-paused .ocean-image{transition:none}
 @media(max-width:760px){.ocean-site .immersive-hero{height:760px;min-height:100svh}.ocean-site .world-heading{top:100px}.ocean-site .central-world.avatar-world{top:270px}.ocean-site .world-bottom{bottom:35px}.ocean-site .world-bottom>p{display:block;font-size:11px;padding:0 25px}.ocean-site .world-bottom>p br{display:none}.ocean-site .ocean-image{background-size:auto 110%;}.ocean-site .credentials{padding:25px}.ocean-site #work,.ocean-site #approach,.ocean-site #learn{margin-top:180px;padding:35px 20px;border-radius:24px}.ocean-site .section-head h2{font-size:27px}.ocean-site .human-belief{padding:35px 25px}.ocean-site .personal{padding:30px 25px;margin-top:110px;margin-bottom:110px}.sea-encounter{right:10px;top:-150px}.ocean-site #approach>.sea-encounter{left:10px}.creature-caption{font-size:10px}.sea-insight{width:275px;max-width:calc(100vw - 65px);padding:20px}.dive-controls{right:10px;bottom:10px}.dive-label{font-size:7px}.ocean-site footer{padding-bottom:90px}.ocean-site .chapter-compass{gap:12px}.ocean-site .chapter-compass a span{font-size:8px}}
 @media(prefers-reduced-motion:reduce){.ocean-site *{animation:none!important;transition:none!important}.sea-encounter{opacity:1;translate:none}.ocean-image{transform:none}.ocean-rays{transform:rotate(-15deg)}}
+
+/* The dive opens toward brighter water at the final chapter. */
+.ocean-site{--ocean-brightness:.85;--light-strength:.4}
+.ocean-site .ocean-image{animation:none;filter:brightness(var(--ocean-brightness));transition:background-position .3s linear,transform .8s ease,filter .6s ease}
+.ocean-site .ocean-rays,.ocean-site .ocean-light{opacity:var(--light-strength);transition:transform .8s ease,opacity .6s ease}
+.ocean-site .world-heading{width:90%;max-width:1000px}
+.ocean-site .world-heading h1{font-size:clamp(28px,4.5vw,60px)}
+
+/* Unified navigation and responsive portrait introduction. */
+.ocean-site .site-nav{position:sticky;top:0;left:auto;transform:none;width:100%;max-width:none;margin:0;padding:18px 4%;height:auto;min-height:82px;background:#042331ed;backdrop-filter:blur(18px);border-bottom:1px solid #7aefff25;z-index:30}
+.ocean-site .site-nav nav{display:flex;gap:24px;align-items:center}
+.ocean-site .site-nav nav a{color:#c0e3e9;font-size:13px}
+.ocean-site .site-nav nav a[aria-current]{color:#7aefff;text-decoration:underline;text-underline-offset:7px}
+.ocean-site .brand-name{font-family:'Aclonica',sans-serif;font-weight:400}
+.brand-avatar{width:46px;height:46px;object-fit:contain;flex:0 0 auto}
+.ocean-site .immersive-hero{height:calc(100svh - 82px);min-height:600px;max-height:1000px;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:45px 7%;gap:20px}
+.ocean-site .world-heading{position:relative;inset:auto;width:100%;max-width:none;text-align:left;padding:0;align-self:center}
+.ocean-site .world-heading h1{font-size:clamp(36px,4.8vw,70px);line-height:1.25}
+.ocean-site .central-world.avatar-world{position:relative;inset:auto;transform:none;width:100%;height:470px;margin:0;align-self:center}
+.ocean-site .world-heading{margin-left:5%}
+.ocean-site .central-world.avatar-world{margin-left:-5%}
+.portrait-static{position:absolute;inset:0 25px 45px;display:grid;place-items:center;transform:translate(var(--avatar-x,0),var(--avatar-y,0));transition:transform .9s cubic-bezier(.2,.8,.2,1);animation:avatar-current 9s ease-in-out infinite}
+.portrait-static .hair-motion{z-index:2;pointer-events:none;opacity:.72;filter:none;mask-image:radial-gradient(ellipse 20% 38% at 32% 34%,#000 48%,transparent 72%),radial-gradient(ellipse 20% 40% at 68% 35%,#000 48%,transparent 72%);animation:hair-current 5.5s ease-in-out infinite!important}
+@keyframes avatar-current{0%,100%{margin-left:-10px;margin-top:4px;rotate:-.25deg}50%{margin-left:10px;margin-top:-7px;rotate:.25deg}}
+@keyframes hair-current{0%,100%{translate:-3px 1px;rotate:-.45deg}50%{translate:4px -2px;rotate:.55deg}}
+.menu-toggle{display:none;background:transparent;color:#e6fcff;border:1px solid #7aefff55;border-radius:50%;width:46px;height:46px;padding:12px;position:relative}
+.menu-toggle>span:not(.sr-only){display:block;width:20px;height:1px;background:currentColor;margin:5px auto;transition:transform .25s,opacity .25s}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(max-width:900px){.ocean-site .site-nav{flex-wrap:wrap;gap:12px;padding:14px 5%}.ocean-site .site-nav nav{display:flex;flex-wrap:wrap;gap:12px 20px}.ocean-site .site-nav nav a{font-size:12px}.ocean-site .site-nav .nav-contact{padding:0;border:0;background:none}.ocean-site .central-world .avatar-illustration{width:340px;height:340px}.ocean-site .central-world.avatar-world{height:390px}}
+@media(max-width:760px){.ocean-site .site-nav{flex-wrap:nowrap;min-height:74px}.menu-toggle{display:block;margin-left:auto;z-index:2}.ocean-site .site-nav nav{position:absolute;left:0;right:0;top:100%;display:flex;flex-direction:column;align-items:stretch;gap:0;padding:10px 5% 22px;background:#042331f8;border-bottom:1px solid #7aefff35;box-shadow:0 20px 40px #00121f70;opacity:0;visibility:hidden;translate:0 -10px;transition:opacity .25s,visibility .25s,translate .25s}.ocean-site.menu-open .site-nav nav{opacity:1;visibility:visible;translate:0 0}.ocean-site .site-nav nav a,.ocean-site .site-nav .nav-contact{display:block!important;font-size:16px;padding:15px 8px;border:0;border-bottom:1px solid #7aefff20;border-radius:0;background:none}.menu-open .menu-toggle>span:nth-child(1){transform:translateY(6px) rotate(45deg)}.menu-open .menu-toggle>span:nth-child(2){opacity:0}.menu-open .menu-toggle>span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}.ocean-site .immersive-hero{display:flex;flex-direction:column;justify-content:center;gap:35px;min-height:660px;height:auto;padding:45px 7% 70px}.ocean-site .world-heading{order:2}.ocean-site .central-world.avatar-world{order:1;width:100%;max-width:350px;height:330px}.ocean-site .world-heading h1{font-size:clamp(30px,8vw,44px)}.ocean-site .central-world .avatar-illustration{width:280px;height:280px}html{scroll-padding-top:85px}}
+
+/* Experience, card, and interaction refinements. */
+.ocean-site .credentials{position:relative;align-items:flex-start;padding-bottom:150px;margin-bottom:0}
+.experience-heading{display:grid;gap:14px;min-width:150px}
+.experience-heading>span{font-size:9px;letter-spacing:1.8px;color:#b9d5dc}
+.resume-link,.approach-link{display:flex;align-items:center;justify-content:space-between;gap:18px;color:#b8f7ff;font-size:12px;border-top:1px solid #7aefff25;padding-top:14px}
+.resume-link:hover,.approach-link:hover{color:#fff}
+.experience-creature{top:auto;right:35px;bottom:18px}
+.experience-creature .sea-insight{top:auto;bottom:105px}
+.creature-trigger{padding:10px}
+.creature-trigger:after{content:'+';display:grid;place-items:center;width:28px;height:28px;border:1px solid #7aefff55;border-radius:50%;font-size:18px;color:#b8f7ff;transition:transform .25s,background .25s}
+.creature-trigger:hover:after,.creature-trigger[aria-expanded=true]:after{transform:rotate(45deg);background:#7aefff18}
+.practice-card{transition:transform .3s ease,border-color .3s ease,box-shadow .3s ease}
+.practice-card .card-art{transition:transform .35s ease,filter .35s ease}
+.practice-card:hover{transform:translateY(-8px);border-color:#7aefff80;box-shadow:0 22px 45px #00121f65}
+.practice-card:hover .card-art{transform:scale(1.025);filter:saturate(1.08)}
+.approach-link{margin-top:auto;padding:18px 18px 20px;border-top:1px solid #7aefff25}
+.practice-card{display:flex;flex-direction:column}
+
+@media(max-width:760px){.brand-avatar{width:40px;height:40px}.ocean-site .world-heading,.ocean-site .central-world.avatar-world{margin-left:0}.ocean-site .credentials{padding-bottom:145px}.experience-heading{width:100%}.experience-creature{right:50%;translate:50px 15px}.experience-creature.encounter-arrived{translate:50% 0}.practice-card:hover{transform:none}}
+
+/* Detail pages opened from the leadership cards. */
+.approach-page{margin:0;min-height:100vh;background:#041622 url('../img/ocean-of-ideas.png') center/cover fixed;color:#e6fcff;font-family:'Nunito',sans-serif}
+.approach-page:before{content:'';position:fixed;inset:0;background:#021923d9;z-index:-1}
+.approach-page header{max-width:920px;margin:auto;padding:32px 28px}
+.approach-page header a{color:#b8f7ff;text-decoration:none}
+.approach-page main{max-width:920px;margin:5vh auto 12vh;padding:48px;border:1px solid #7aefff40;border-radius:32px;background:#042331df;backdrop-filter:blur(18px)}
+.approach-page h1,.approach-page h2{font-family:'Aclonica',sans-serif;font-weight:400}
+.approach-page h1{font-size:clamp(38px,7vw,72px);line-height:1.16;margin:18px 0 28px}
+.approach-page h2{font-size:24px;color:#7aefff}
+.detail-eyebrow{font-size:11px;letter-spacing:2px;color:#7aefff}
+.detail-intro{font-size:21px;line-height:1.65;color:#d5edf2;max-width:720px}
+.approach-page section{margin-top:52px;padding-top:34px;border-top:1px solid #7aefff30}
+.approach-page section p,.approach-page li{font-size:17px;line-height:1.75;color:#c7dfe5}
+.approach-page li+li{margin-top:10px}
+@media(max-width:760px){.approach-page main{margin:0 20px 60px;padding:30px 24px;border-radius:24px}.approach-page h1{font-size:38px}.detail-intro{font-size:18px}}
