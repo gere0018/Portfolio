@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="220" viewBox="0 0 420 220" fill="none">
+  <defs>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientTransform="matrix(0 104 -155 0 210 110)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff" stop-opacity=".78"/>
+      <stop offset="1" stop-color="#e6fcff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="420" height="220" rx="16" fill="#e6fcff"/>
+  <rect width="420" height="220" rx="16" fill="url(#glow)"/>
+  <circle cx="210" cy="110" r="71" stroke="#00a9c0" stroke-opacity=".11"/>
+  <circle cx="210" cy="110" r="51" stroke="#00a9c0" stroke-opacity=".18"/>
+  <path d="M82 58 174 96M338 58l-92 38M82 162l92-38M338 162l-92-38" stroke="#00a9c0" stroke-opacity=".62" stroke-width="1.5"/>
+  <circle cx="82" cy="58" r="27" fill="#fff" stroke="#62dceb"/>
+  <circle cx="338" cy="58" r="27" fill="#fff" stroke="#62dceb"/>
+  <circle cx="82" cy="162" r="27" fill="#fff" stroke="#62dceb"/>
+  <circle cx="338" cy="162" r="27" fill="#fff" stroke="#62dceb"/>
+  <g stroke="#006f80" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="78" cy="54" r="5"/><path d="M68 70v-3a10 10 0 0 1 20 0v3zM91 59h6m-3-3v6"/>
+    <rect x="327" y="47" width="22" height="22" rx="4"/><path d="M327 54h22m-15 0v15"/>
+    <path d="m72 155-7 7 7 7m20-14 7 7-7 7m-4-18-6 22"/>
+    <path d="m328 164 2-7 13-13 8 8-13 13-7 2zM340 147l8 8m-22 14h24"/>
+  </g>
+  <circle cx="210" cy="110" r="38" fill="#00c2d9"/>
+  <circle cx="210" cy="110" r="30" stroke="#fff" stroke-opacity=".42"/>
+  <path d="m197 118 24-16-8 25-4-11-12 2z" fill="#00262b"/>
+</svg>
