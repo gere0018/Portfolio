@@ -1,0 +1,14 @@
+{
+  "name": "Nehmat Gereige",
+  "short_name": "Nehmat",
+  "icons": [
+    {
+      "src": "img/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#042331",
+  "background_color": "#042331",
+  "display": "standalone"
+}
