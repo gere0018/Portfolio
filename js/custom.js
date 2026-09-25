@@ -56,7 +56,7 @@ $(document).ready(function () {
     } else {
         $(".navbar-fixed-top").removeClass("bg-nav");
         // if I am at the top of a demo page, add invisible class
-        if(currentURL.indexOf('/projects/demo')!== -1) {
+        if(currentURL.indexOf('/projects/license-management')!== -1 || currentURL.indexOf('/projects/quest-design-system-legacy')!== -1) {
             $(".navbar-fixed-top").addClass('invisible')
         }
     }
@@ -66,7 +66,7 @@ $(document).ready(function () {
             $(".navbar-fixed-top").addClass("bg-nav");
         } else {
         // if I am at the top of a demo page, add invisible class
-        if(currentURL.indexOf('/projects/demo')!== -1) {
+        if(currentURL.indexOf('/projects/license-management')!== -1 || currentURL.indexOf('/projects/quest-design-system-legacy')!== -1) {
             $(".navbar-fixed-top").addClass('invisible')
         }            
             $(".navbar-fixed-top").removeClass("bg-nav");
@@ -117,7 +117,6 @@ $(document).ready(function () {
 
     //animatedModal
     // TODO: delete this line
-    // $("#demo01,#demo02,#demo03,#demo04,#demo05,#demo06,#demo07,#demo08,#demo09").animatedModal();
 
     // Contact Form 	
 
