@@ -82,8 +82,14 @@ body.ocean-site{background:#041622;color:#e6fcff;--dive-position:25%;--dive-scal
 .ocean-site #work .practice-card>small{margin:24px 15px 0;font-size:9px;line-height:12px;letter-spacing:1.3px;color:#7aefff;font-weight:800}
 .ocean-site #work .practice-card>h3{margin:13px 15px 0;font:400 23px/1.35 'Aclonica',sans-serif;letter-spacing:-.8px;color:#e6fcff}
 .ocean-site #work .practice-card>p{margin:15px 15px 0;font-size:14px;line-height:1.65;color:#c7dfe5}
+.ocean-site #work .practice-card>p{flex:1}
 .ocean-site #work .approach-link{align-self:center;justify-content:center;width:max-content;margin:12px auto 12px;padding:4px 20px;border:0;border-radius:8px;background:#00e5ff;color:#00262b;font-size:16px;line-height:24px;font-weight:700;white-space:nowrap}
 .ocean-site #work .approach-link:hover{background:#7aefff;color:#00262b;transform:translateY(-2px)}
+.ocean-site .belief-resource{display:flex;align-items:center;justify-content:space-between;gap:28px;margin-top:30px;padding-top:24px;border-top:1px solid #7aefff30}
+.ocean-site .belief-resource>div{max-width:650px}
+.ocean-site .belief-resource strong{display:block;margin-bottom:7px;color:#7aefff;font-size:16px}
+.ocean-site .belief-resource p{color:#c7dfe5;font-size:14px;line-height:1.65}
+.ocean-site .belief-resource .button{flex:0 0 auto;gap:8px;white-space:nowrap}
 .ocean-site #work .learning-art{background:#b8f7ff;opacity:.9;color:#141821}
 .ai-title,.human-title{position:absolute;font:400 20px/1.2 'Aclonica',sans-serif;color:#141821;white-space:nowrap}
 .ai-title{left:6.6%;top:9.5%}.human-title{left:42.5%;top:78.5%}
@@ -219,3 +225,4 @@ body.ocean-site{background:#041622;color:#e6fcff;--dive-position:25%;--dive-scal
 .recognition-caption{margin:15px 0 0;font-size:13px!important;color:#a9c7ce!important}
 @media(max-width:760px){.approach-page main section.ai-leadership{padding:24px 20px}.award-grid{grid-template-columns:1fr}.award-card{min-height:82px;padding:14px}.award-link{position:static;margin-left:auto;white-space:nowrap}.ai-outcomes{gap:8px}.ai-outcomes>div{padding:13px 12px}}
 @media(max-width:560px){.ai-outcomes{grid-template-columns:1fr}.recognition-showcase h2{font-size:20px}}
+@media(max-width:760px){.ocean-site .belief-resource{align-items:flex-start;flex-direction:column;gap:18px}.ocean-site .belief-resource .button{max-width:100%;white-space:normal;text-align:center}}
