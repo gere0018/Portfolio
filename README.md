@@ -17,7 +17,7 @@ Run `python3 -m http.server 8000 --bind 127.0.0.1` and open http://127.0.0.1:800
 
 Uses the provided Figma design system, file `2OKAewBQYU6CsnOc9imfPk`, Colors frame `6:34`: cyan primary scale, neutral surfaces, Aclonica headings, Nunito body text, and 8px control corners. Larger rounded scene containers extend that foundation. The original CSS explorations remain as styling history; `.unified` defines the selected homepage refinements.
 
-Avatar: user-provided 2026 PNG at `img/nehmat-avatar-2026.png`.
+Avatar: user-provided 2026 illustration at `img/nehmat-avatar-2026-front-facing.png`.
 
 Copy is proposed wording based on the original portfolio, public LinkedIn activity, and user-provided context. No unverified business outcome metrics or endorsements have been added. Other pages are outside this refinement's scope.
 
