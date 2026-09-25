@@ -85,6 +85,7 @@ body.ocean-site{background:#041622;color:#e6fcff;--dive-position:25%;--dive-scal
 .ocean-site #work .practice-card>p{flex:1}
 .ocean-site #work .approach-link{align-self:center;justify-content:center;width:max-content;margin:12px auto 12px;padding:4px 20px;border:0;border-radius:8px;background:#00e5ff;color:#00262b;font-size:16px;line-height:24px;font-weight:700;white-space:nowrap}
 .ocean-site #work .approach-link:hover{background:#7aefff;color:#00262b;transform:translateY(-2px)}
+.ocean-site footer .portfolio-credit strong{color:#7aefff;font-weight:800}
 .ocean-site .belief-resource{display:flex;align-items:center;justify-content:space-between;gap:28px;margin-top:30px;padding-top:24px;border-top:1px solid #7aefff30}
 .ocean-site .belief-resource>div{max-width:650px}
 .ocean-site .belief-resource strong{display:block;margin-bottom:7px;color:#7aefff;font-size:16px}
@@ -100,7 +101,7 @@ body.ocean-site{background:#041622;color:#e6fcff;--dive-position:25%;--dive-scal
 .ai-icon-codex>img{transform:translateX(-50%)}
 @media(max-width:1000px){.ocean-site #work{width:calc(100% - 64px)}.ocean-site #work .practice-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ocean-site #work .practice-card:last-child{grid-column:1/-1}.ocean-site #work .practice-card:last-child .card-art{max-width:500px;width:100%;align-self:center}}
 @media(max-width:1000px){.ocean-site .credentials{grid-template-columns:repeat(3,minmax(0,1fr));gap:24px 20px}.ocean-site .experience-heading{grid-column:1/-1}.ocean-site .credentials>div strong{font-size:19px}}
-@media(max-width:760px){.ocean-site #work{width:calc(100% - 40px);padding:35px 20px;margin-top:180px}.ocean-site #work .section-head{display:block;margin-bottom:27px}.ocean-site #work .section-head>div,.ocean-site #work .section-head>p{flex:auto;width:auto;max-width:none}.ocean-site #work .section-head h2{font-size:27px;line-height:1.3}.ocean-site #work .section-head>p{margin-top:20px;font-size:13px}.ocean-site #work .practice-grid{grid-template-columns:1fr;gap:18px}.ocean-site #work .practice-card:last-child{grid-column:auto}.ocean-site #work .practice-card:last-child .card-art{max-width:none}.ocean-site .credentials{grid-template-columns:repeat(2,minmax(0,1fr));padding:25px;gap:20px 24px}.ocean-site .experience-heading{grid-column:1/-1;width:auto}.ocean-site .experience-heading .button{width:max-content}.ocean-site .journey .section-head .learning-button{display:inline-flex;margin-top:20px}}
+@media(max-width:760px){.ocean-site #work{width:calc(100% - 40px);padding:35px 20px;margin-top:180px}.ocean-site #work .section-head{display:block;margin-bottom:27px}.ocean-site #work .section-head>div,.ocean-site #work .section-head>p{flex:auto;width:auto;max-width:none}.ocean-site #work .section-head h2{font-size:27px;line-height:1.3}.ocean-site #work .section-head>p{margin-top:20px;font-size:13px}.ocean-site #work .practice-grid{grid-template-columns:1fr;gap:18px}.ocean-site #work .practice-card:last-child{grid-column:auto}.ocean-site #work .practice-card:last-child .card-art{max-width:none}.ocean-site .credentials{grid-template-columns:repeat(2,minmax(0,1fr));padding:25px;gap:20px 24px}.ocean-site .experience-heading{grid-column:1/-1;width:auto}.ocean-site .experience-heading .button{width:max-content}}
 @media(max-width:370px){.ocean-site #work{padding-inline:14px}.ocean-site #work .practice-card{padding-inline:10px}.ocean-site #work .practice-card>h3{font-size:21px}.ai-title,.human-title{font-size:17px}}
 
 /* Current and previous experience are grouped as separate, labeled rows. */
@@ -132,13 +133,11 @@ body.ocean-site{background:#041622;color:#e6fcff;--dive-position:25%;--dive-scal
 .ocean-site .site-nav .nav-contact.button{display:inline-flex;align-items:center;justify-content:center;width:max-content;padding:4px 20px;border:0;border-radius:8px;background:#00e5ff;color:#00262b}
 .ocean-site .site-nav .nav-contact.button:hover{background:#7aefff;color:#00262b}
 .ocean-site #work .approach-link{margin:8px auto}
-.ocean-site #learn .section-head .learning-button{margin:16px 0}
 .ocean-site #work .strategy-art,.ocean-site #work .learning-art{opacity:1}
 .ocean-site #work .strategy-art{display:block;padding:0}
 .ocean-site #work .strategy-art>img,.ocean-site #work .learning-art>img{width:100%;height:100%;max-width:none;object-fit:cover}
 .ocean-site .world-heading h1 .hero-title-accent{color:#7aefff}
 .ocean-site #learn .video>small,.ocean-site #learn .video h3,.ocean-site #learn .video>.video-button{margin-left:15px;margin-right:15px}
-.ocean-site #learn .video>.video-button{width:max-content;margin-top:8px;margin-bottom:12px}
 .ocean-site #learn .video:hover .video-button{background:#7aefff;color:#00262b}
 .ocean-site #learn .video .video-button:hover{text-decoration:none}
 .ocean-site #learn .learning-creature{top:30px;right:34px;z-index:8;padding:0;border:0;border-radius:0;background:transparent;box-shadow:none;backdrop-filter:none}
@@ -146,7 +145,7 @@ body.ocean-site{background:#041622;color:#e6fcff;--dive-position:25%;--dive-scal
 .ocean-site #learn .section-head{padding-right:125px}
 .ocean-site .button,.ocean-site #work .approach-link,.ocean-site #learn .video>.video-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:40px;min-height:40px;padding:8px 22px;border:0;border-radius:8px;background:#00e5ff;color:#00262b!important;font-family:'Nunito',sans-serif;font-size:16px;font-weight:800;line-height:24px;letter-spacing:0;text-decoration:none;box-shadow:none;white-space:nowrap;transition:background .2s,transform .2s}
 .ocean-site .button:hover,.ocean-site #work .approach-link:hover,.ocean-site #learn .video>.video-button:hover{background:#7aefff;color:#00262b!important;transform:translateY(-1px)}
-.ocean-site #learn .video>.video-button{width:max-content;margin:8px 15px 12px}
+.ocean-site #learn .video>.video-button{width:calc(100% - 30px);max-width:100%;min-width:0;height:auto;min-height:40px;margin:8px 15px 12px;padding:8px 12px;white-space:normal;text-align:center;line-height:1.2;overflow-wrap:anywhere}
 .ocean-site #learn .video:hover .video-button{background:#00e5ff;color:#00262b!important}
 @media(max-width:760px){.ocean-site #learn .learning-creature{top:20px;right:18px}.ocean-site #learn .learning-creature .sea-insight{top:92px;right:0;left:auto}.ocean-site #learn .section-head{padding-right:90px}.ocean-site #learn .video>.video-button{margin-left:15px;margin-right:15px}.ocean-site .personal{grid-template-columns:1fr;gap:18px}.ocean-site .personal-avatar{width:150px;max-height:185px;justify-self:start}}
 @media(max-width:760px){.ocean-site .experience-row{grid-template-columns:1fr;gap:12px;padding-top:16px}.ocean-site .experience-companies{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 24px}.ocean-site .experience-companies strong{font-size:17px}.ocean-site .experience-row-label{padding:0}.ocean-site .credentials{padding-bottom:145px}}
