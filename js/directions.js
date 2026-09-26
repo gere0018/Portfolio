@@ -39,6 +39,14 @@ let pointerFrame;
 window.addEventListener('pointermove',e=>{if(paused||e.pointerType!=='mouse')return;cancelAnimationFrame(pointerFrame);pointerFrame=requestAnimationFrame(()=>{site.style.setProperty('--ocean-x',`${(e.clientX/innerWidth-.5)*12}px`);site.style.setProperty('--ocean-y',`${(e.clientY/innerHeight-.5)*8}px`);});});
 world.addEventListener('pointermove',e=>{if(paused||e.pointerType!=='mouse')return;const box=world.getBoundingClientRect();site.style.setProperty('--avatar-x',`${(e.clientX-box.left)/box.width*10-5}px`);site.style.setProperty('--avatar-y',`${(e.clientY-box.top)/box.height*8-4}px`);});
 world.addEventListener('pointerleave',()=>{site.style.setProperty('--avatar-x','0px');site.style.setProperty('--avatar-y','0px');});
+const greetingButton=world.querySelector('.avatar-greeting');
+function setGreeting(show){world.classList.toggle('avatar-waving',show);if(!show)world.classList.remove('avatar-focused');greetingButton.setAttribute('aria-pressed',String(show));greetingButton.setAttribute('aria-label',show?'Hide greeting':'Show greeting');greetingButton.querySelector('.sr-only').textContent=show?'Hide greeting':'Show greeting';}
+greetingButton.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')world.classList.add('avatar-hovering');});
+greetingButton.addEventListener('pointerleave',e=>{if(e.pointerType==='mouse'){world.classList.remove('avatar-hovering');if(greetingButton.getAttribute('aria-pressed')!=='true')world.classList.remove('avatar-waving');}});
+greetingButton.addEventListener('focus',()=>{if(greetingButton.matches(':focus-visible'))world.classList.add('avatar-focused');});
+greetingButton.addEventListener('blur',()=>world.classList.remove('avatar-focused'));
+greetingButton.addEventListener('click',()=>setGreeting(greetingButton.getAttribute('aria-pressed')!=='true'));
+greetingButton.addEventListener('keydown',e=>{if(e.key==='Escape')setGreeting(false);});
 const particles=document.querySelector('.ocean-plankton');
 for(let i=0;i<25;i++){const dot=document.createElement('i');dot.style.cssText=`left:${(i*37+11)%100}%;top:${(i*23+4)%100}%;animation-delay:-${i%13}s;animation-duration:${14+i%9}s`;particles.append(dot);}
 const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('encounter-arrived');}),{threshold:.18});
