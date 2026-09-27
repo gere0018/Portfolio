@@ -13,7 +13,7 @@ function updateMotion(){site.classList.toggle('motion-paused',paused);motion.set
 motion.addEventListener('click',()=>{paused=!paused;updateMotion();updateDive();});
 reduced.addEventListener('change',()=>{paused=reduced.matches;updateMotion();});updateMotion();
 const sections=[...document.querySelectorAll('#experience,#work,#approach,#learn,#contact')];
-const names={experience:'WORK EXPERIENCE',work:'01 / SHARED DIRECTION',approach:'02 / HUMAN VALUES',learn:'03 / SHARED KNOWLEDGE',contact:'04 / NEW CONNECTIONS'};
+const names={experience:'WORK EXPERIENCE',work:'DESIGN LEADERSHIP',approach:'HUMAN FIRST',learn:'EDUCATION',contact:'LET’S CONNECT'};
 let active='';
 function updateDive(){
  const max=document.documentElement.scrollHeight-innerHeight;
@@ -39,18 +39,51 @@ let pointerFrame;
 window.addEventListener('pointermove',e=>{if(paused||e.pointerType!=='mouse')return;cancelAnimationFrame(pointerFrame);pointerFrame=requestAnimationFrame(()=>{site.style.setProperty('--ocean-x',`${(e.clientX/innerWidth-.5)*12}px`);site.style.setProperty('--ocean-y',`${(e.clientY/innerHeight-.5)*8}px`);});});
 world.addEventListener('pointermove',e=>{if(paused||e.pointerType!=='mouse')return;const box=world.getBoundingClientRect();site.style.setProperty('--avatar-x',`${(e.clientX-box.left)/box.width*10-5}px`);site.style.setProperty('--avatar-y',`${(e.clientY-box.top)/box.height*8-4}px`);});
 world.addEventListener('pointerleave',()=>{site.style.setProperty('--avatar-x','0px');site.style.setProperty('--avatar-y','0px');});
+const greetingButton=world.querySelector('.avatar-greeting');
+function setGreeting(show){world.classList.toggle('avatar-waving',show);if(!show)world.classList.remove('avatar-focused');greetingButton.setAttribute('aria-pressed',String(show));greetingButton.setAttribute('aria-label',show?'Stop waving':'Wave hello');greetingButton.querySelector('.sr-only').textContent=show?'Stop waving':'Wave hello';}
+greetingButton.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')world.classList.add('avatar-hovering');});
+greetingButton.addEventListener('pointerleave',e=>{if(e.pointerType==='mouse'){world.classList.remove('avatar-hovering');if(greetingButton.getAttribute('aria-pressed')!=='true')world.classList.remove('avatar-waving');}});
+greetingButton.addEventListener('focus',()=>{if(greetingButton.matches(':focus-visible'))world.classList.add('avatar-focused');});
+greetingButton.addEventListener('blur',()=>world.classList.remove('avatar-focused'));
+greetingButton.addEventListener('click',()=>setGreeting(greetingButton.getAttribute('aria-pressed')!=='true'));
+greetingButton.addEventListener('keydown',e=>{if(e.key==='Escape')setGreeting(false);});
 const particles=document.querySelector('.ocean-plankton');
 for(let i=0;i<25;i++){const dot=document.createElement('i');dot.style.cssText=`left:${(i*37+11)%100}%;top:${(i*23+4)%100}%;animation-delay:-${i%13}s;animation-duration:${14+i%9}s`;particles.append(dot);}
 const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)entry.target.classList.add('encounter-arrived');}),{threshold:.18});
-document.querySelectorAll('.sea-encounter').forEach(encounter=>{
+const encounters=[...document.querySelectorAll('.sea-encounter')];
+encounters.forEach(encounter=>{
  observer.observe(encounter);
- const trigger=encounter.querySelector('.creature-trigger');const insight=encounter.querySelector('.sea-insight');
- function open(){insight.hidden=false;trigger.setAttribute('aria-expanded','true');}
- function close(restore=false){insight.hidden=true;trigger.setAttribute('aria-expanded','false');if(restore)trigger.focus();}
- trigger.addEventListener('click',()=>{if(insight.hidden)open();else close();});
- encounter.addEventListener('pointerenter',e=>{if(e.pointerType==='mouse')open();});
- encounter.addEventListener('pointerleave',e=>{if(e.pointerType==='mouse')close();});
- trigger.addEventListener('focus',open);
- encounter.querySelector('.sea-close').addEventListener('click',()=>close(true));
- encounter.addEventListener('keydown',e=>{if(e.key==='Escape')close(true);});
+ const trigger=encounter.querySelector('.creature-trigger');
+ const insight=encounter.querySelector('.sea-insight');
+ const closeButton=encounter.querySelector('.sea-close');
+ const closedLabel=trigger.getAttribute('aria-label');
+ const openLabel=closedLabel.replace(/^Discover/,'Close');
+ function open(){
+  encounters.forEach(other=>{
+   if(other===encounter)return;
+   const otherTrigger=other.querySelector('.creature-trigger');
+   const otherInsight=other.querySelector('.sea-insight');
+   otherInsight.hidden=true;
+   otherTrigger.setAttribute('aria-expanded','false');
+   otherTrigger.setAttribute('aria-label',otherTrigger.dataset.closedLabel||otherTrigger.getAttribute('aria-label').replace(/^Close/,'Discover'));
+  });
+  trigger.dataset.closedLabel=closedLabel;
+  insight.hidden=false;
+  trigger.setAttribute('aria-expanded','true');
+  trigger.setAttribute('aria-label',openLabel);
+ }
+ function close(restore=false){
+  insight.hidden=true;
+  trigger.setAttribute('aria-expanded','false');
+  trigger.setAttribute('aria-label',closedLabel);
+  if(restore)trigger.focus({preventScroll:true});
+ }
+ trigger.addEventListener('click',()=>insight.hidden?open():close());
+ closeButton.addEventListener('click',()=>close(true));
+ encounter.addEventListener('keydown',event=>{
+  if(event.key==='Escape'&&!insight.hidden){event.preventDefault();close(true);}
+ });
+ document.addEventListener('click',event=>{
+  if(!encounter.contains(event.target)&&!insight.hidden)close();
+ });
 });

@@ -4,5 +4,5 @@
 document.addEventListener('DOMContentLoaded', () => {
   const count = document.querySelector('[data-youtube-subscribers]');
   if (!count) return;
-  count.textContent = count.dataset.fallback || '8,500+';
+  count.textContent = count.dataset.fallback || '8,400+';
 });
