@@ -226,6 +226,8 @@ body.ocean-site{background:#041622;color:#e6fcff;--dive-position:25%;--dive-scal
 .ocean-site .personal-context .personal-avatar{display:block;width:100%;max-width:220px;max-height:260px;object-fit:contain;justify-self:center;align-self:end}
 .ocean-site .contact-invitation{padding-top:32px}
 .ocean-site .contact-invitation>p{max-width:630px;margin:22px auto 30px;color:#b8f7ff;line-height:1.8}
+.ocean-site .contact-actions{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:16px}
+.ocean-site .contact-actions .contact-icon{width:18px;height:18px;flex:0 0 auto}
 @media(max-width:760px){.ocean-site .personal-contact{margin-top:110px;padding:30px 25px}.ocean-site .personal-context{grid-template-columns:1fr;gap:18px}.ocean-site .personal-context .personal-avatar{width:150px;max-height:185px;justify-self:center}.ocean-site .personal-context h2{font-size:27px}.ocean-site .contact-invitation h2{font-size:29px}}
 
 .ocean-site #approach.human-core{position:relative;padding-bottom:190px}
@@ -261,18 +263,28 @@ body.ocean-site{background:#041622;color:#e6fcff;--dive-position:25%;--dive-scal
 @media(max-width:560px){.ai-outcomes{grid-template-columns:1fr}.recognition-showcase h2{font-size:20px}}
 @media(max-width:760px){.ocean-site .belief-resource{align-items:flex-start;flex-direction:column;gap:18px}.ocean-site .belief-resource .button{max-width:100%;white-space:normal;text-align:center}}
 
-.ocean-site .ai-multiplier{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:28px;align-items:center;margin-top:30px;padding:24px 0 0;border-top:1px solid #7aefff30}
-.ocean-site .ai-multiplier .eyebrow{font-size:10px;line-height:1.6}
-.ocean-site .ai-multiplier h3{margin-top:10px;color:#e6fcff;font-size:clamp(21px,2.4vw,28px);line-height:1.3}
-.ocean-site .ai-multiplier-copy p{font-size:14px;line-height:1.65;color:#c7dfe5}
-.ocean-site .ai-multiplier-copy ul{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0;padding:0;list-style:none}
-.ocean-site .ai-multiplier-copy li{padding:7px 11px;border:1px solid #7aefff45;border-radius:999px;color:#b8f7ff;font-size:11px}
 .ocean-site .sea-insight{background:linear-gradient(145deg,#b8f7ff,#6de8f4);border-color:#d6fdff;color:#003440;box-shadow:0 20px 50px #00121f70}
 .ocean-site .sea-insight small{color:#006476;font-weight:800}
 .ocean-site .sea-insight h3{color:#003440}
 .ocean-site .sea-insight p{color:#174b56}
 .ocean-site .sea-insight .sea-close{color:#00576a}
-@media(max-width:760px){.ocean-site #approach .human-conclusion{grid-template-columns:1fr;gap:12px;margin-top:0;padding-top:22px}.ocean-site #approach .human-conclusion h3{font-size:26px}.ocean-site #approach .human-conclusion p{font-size:14px}.ocean-site #approach .human-conclusion-practice{padding-top:0}.ocean-site #work .roi-conclusion p{font-size:13px}.ocean-site .ai-multiplier{grid-template-columns:1fr;gap:12px}.ocean-site .ai-multiplier .eyebrow{font-size:10px}.experience-creature .sea-insight{max-width:calc(100vw - 40px)}}
+@media(max-width:760px){.ocean-site #approach .human-conclusion{grid-template-columns:1fr;gap:12px;margin-top:0;padding-top:22px}.ocean-site #approach .human-conclusion h3{font-size:26px}.ocean-site #approach .human-conclusion p{font-size:14px}.ocean-site #approach .human-conclusion-practice{padding-top:0}.ocean-site #work .roi-conclusion p{font-size:13px}.experience-creature .sea-insight{max-width:calc(100vw - 40px)}}
+
+@media(max-width:760px){.ocean-site #work .learning-art{height:auto;aspect-ratio:21/11}.ocean-site #work .learning-art>img{width:100%;height:100%;object-fit:contain}}
+
+@media(max-width:760px){
+ .ocean-site .sea-encounter.insight-open,
+ .ocean-site #learn .learning-creature.insight-open{z-index:250;opacity:1;translate:none}
+ .ocean-site .experience-creature.insight-open .sea-insight,
+ .ocean-site #approach .human-creature.insight-open .sea-insight,
+ .ocean-site #learn .learning-creature.insight-open .sea-insight{
+  position:fixed;top:50%;left:50%;right:auto;bottom:auto;
+  width:min(360px,calc(100vw - 32px));max-width:calc(100vw - 32px);
+  max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);
+  overflow-y:auto;overscroll-behavior:contain;
+  transform:translate(-50%,-50%);z-index:260
+ }
+}
 
 /* Clearer hierarchy for section labels and their display headings. */
 .ocean-site .eyebrow,.approach-page .detail-eyebrow{font-size:12px;letter-spacing:1.8px}
@@ -285,7 +297,7 @@ body.ocean-site{background:#041622;color:#e6fcff;--dive-position:25%;--dive-scal
 .approach-page section h2,.approach-page .ai-leadership h2,.recognition-showcase h2{font-size:clamp(24px,2.9vw,28px)}
 .detail-kicker{font-size:12px!important;letter-spacing:1.8px}
 @media(max-width:760px){.ocean-site .section-head h2,.ocean-site #work .section-head h2{font-size:26px}.ocean-site .core-intro h2{font-size:29px}.ocean-site .personal h2{font-size:27px}.ocean-site .contact h2{font-size:38px}.approach-page h1{font-size:clamp(32px,4.1vw,40px)}.approach-page section h2,.approach-page .ai-leadership h2,.recognition-showcase h2{font-size:clamp(24px,2.9vw,28px)}.ocean-site .eyebrow,.approach-page .detail-eyebrow{font-size:12px}.detail-kicker{font-size:12px!important}}
-@media(max-width:760px){.ocean-site #learn .video-art.thought{background:linear-gradient(135deg,#b8f7ff,#6de8f4);color:#003440;border:1px solid #d6fdff}.ocean-site #learn .video-art.thought>span{max-width:calc(100% - 58px);font-size:clamp(25px,7vw,34px);letter-spacing:-1px;line-height:1.1}.ocean-site #learn .video-art.thought:after{right:10px;bottom:-15px;color:#00a6bb;font-size:clamp(92px,29vw,138px);opacity:.85}.ocean-site #learn .video-art.thought>small{color:#005b6b}.ocean-site #learn .video-art.thought .play{border-color:#005b6b;color:#005b6b}}
+@media(max-width:760px){.ocean-site #learn .video-art.thought{background:linear-gradient(135deg,#b8f7ff,#6de8f4);color:#003440;border:1px solid #d6fdff}.ocean-site #learn .video-art.thought>span{max-width:calc(100% - 58px);font-size:clamp(25px,7vw,34px);letter-spacing:-1px;line-height:1.1}.ocean-site #learn .video-art.thought:after{content:none}.ocean-site #learn .video-art.thought>small{color:#005b6b}.ocean-site #learn .video-art.thought .play{border-color:#005b6b;color:#005b6b}}
 
 /* Show the sprint as a repeatable quality process, not a speed-only claim. */
 .approach-page .sprint-method>h2{max-width:760px;margin:8px 0 16px}

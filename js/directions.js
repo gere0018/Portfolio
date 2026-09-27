@@ -63,16 +63,19 @@ encounters.forEach(encounter=>{
    if(other===encounter)return;
    const otherTrigger=other.querySelector('.creature-trigger');
    const otherInsight=other.querySelector('.sea-insight');
+   other.classList.remove('insight-open');
    otherInsight.hidden=true;
    otherTrigger.setAttribute('aria-expanded','false');
    otherTrigger.setAttribute('aria-label',otherTrigger.dataset.closedLabel||otherTrigger.getAttribute('aria-label').replace(/^Close/,'Discover'));
   });
   trigger.dataset.closedLabel=closedLabel;
+  encounter.classList.add('insight-open');
   insight.hidden=false;
   trigger.setAttribute('aria-expanded','true');
   trigger.setAttribute('aria-label',openLabel);
  }
  function close(restore=false){
+  encounter.classList.remove('insight-open');
   insight.hidden=true;
   trigger.setAttribute('aria-expanded','false');
   trigger.setAttribute('aria-label',closedLabel);
@@ -84,10 +87,6 @@ encounters.forEach(encounter=>{
  });
  encounter.addEventListener('pointerleave',event=>{
   if(hoverDevices.matches&&event.pointerType==='mouse')close();
- });
- trigger.addEventListener('focus',()=>{if(hoverDevices.matches)open();});
- encounter.addEventListener('focusout',event=>{
-  if(hoverDevices.matches&&!encounter.contains(event.relatedTarget))close();
  });
  trigger.addEventListener('click',event=>{
   // Desktop pointer users open the insight by hovering; keep click activation
