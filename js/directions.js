@@ -78,7 +78,22 @@ encounters.forEach(encounter=>{
   trigger.setAttribute('aria-label',closedLabel);
   if(restore)trigger.focus({preventScroll:true});
  }
- trigger.addEventListener('click',()=>insight.hidden?open():close());
+ const hoverDevices=window.matchMedia('(hover: hover) and (pointer: fine)');
+ encounter.addEventListener('pointerenter',event=>{
+  if(hoverDevices.matches&&event.pointerType==='mouse')open();
+ });
+ encounter.addEventListener('pointerleave',event=>{
+  if(hoverDevices.matches&&event.pointerType==='mouse')close();
+ });
+ trigger.addEventListener('focus',()=>{if(hoverDevices.matches)open();});
+ encounter.addEventListener('focusout',event=>{
+  if(hoverDevices.matches&&!encounter.contains(event.relatedTarget))close();
+ });
+ trigger.addEventListener('click',event=>{
+  // Desktop pointer users open the insight by hovering; keep click activation
+  // for keyboard users and use click/tap toggling on touch devices.
+  if(!hoverDevices.matches||event.detail===0)(insight.hidden?open():close());
+ });
  closeButton.addEventListener('click',()=>close(true));
  encounter.addEventListener('keydown',event=>{
   if(event.key==='Escape'&&!insight.hidden){event.preventDefault();close(true);}
