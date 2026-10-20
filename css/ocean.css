@@ -106,6 +106,9 @@ body.ocean-site{background:#041622;color:#e6fcff;--dive-position:25%;--dive-scal
 .ocean-site footer a{color:#c7dfe5;text-decoration:underline;text-decoration-color:#7aefff70;text-underline-offset:4px}
 .ocean-site footer a:hover{color:#7aefff}
 @media(max-width:760px){.ocean-site .contact-actions{flex-direction:column;gap:12px}.ocean-site .contact-actions .button{width:100%;max-width:420px}.ocean-site .contact-invitation .consultation-copy{font-size:14px}.ocean-site footer{flex-wrap:wrap;justify-content:center;gap:18px 24px;text-align:center}}
+.ocean-site .contact-section{margin-top:70px;margin-bottom:50px;padding:45px;background:#042331ce;border:1px solid #7aefff30;border-radius:30px;backdrop-filter:blur(15px)}
+.ocean-site .contact-section .contact-invitation{padding-top:0}
+@media(max-width:760px){.ocean-site .contact-section{margin-top:50px;padding:30px 25px}}
 .ocean-site .belief-resource{display:flex;align-items:center;justify-content:space-between;gap:28px;margin-top:30px;padding-top:24px;border-top:1px solid #7aefff30}
 .ocean-site .belief-resource>div{max-width:650px}
 .ocean-site .belief-resource strong{display:block;margin-bottom:7px;color:#7aefff;font-size:16px}
