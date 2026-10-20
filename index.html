@@ -15,7 +15,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/directions.css">
 <link rel="stylesheet" href="css/world.css">
-<link rel="stylesheet" href="css/ocean.css?v=20260927-mobile-contact-video">
+<link rel="stylesheet" href="css/ocean.css?v=20261020-consultation-cta">
 <!-- Google tag (gtag.js) — GA4 property restored from the previous portfolio. -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-442ZKT40L5"></script>
 <script>
@@ -344,16 +344,25 @@
 </h2>
 <p>Looking to build an AI-native design practice in your team, explore a collaboration, or find a fresh perspective?<br>I’d love to hear what you have in mind.</p>
 <div class="contact-actions">
-<a class="button" href="mailto:nehmat.gereige@gmail.com">Contact Me</a>
-<a class="button" href="https://www.linkedin.com/in/nehmatgereige/" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
+<a class="button consultation-button" data-consultation-link href="#">Book a paid consultation</a>
+<a class="button contact-secondary" href="mailto:nehmat.gereige@gmail.com">Contact Me</a>
+<a class="button contact-secondary" href="https://www.linkedin.com/in/nehmatgereige/" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
 </div>
+<p class="consultation-copy">Book a focused 60-minute one-on-one session for designers and teams: portfolio storytelling, AI in UX workflows, design leadership, and career growth. $100 USD per session. Looking for something larger for your team? Reach out through Contact Me and let's talk.</p>
 </div>
 </section>
 <footer class="wrap">
 <span class="portfolio-credit">Designed and built by Nehmat Gereige · © 2026</span>
+<a data-consultation-link href="#">Book a consultation</a>
 <a href="#top">Back to top ↑</a>
 </footer>
 </main>
 </div>
+<script>
+  const CONSULTATION_URL = 'https://buy.stripe.com/4gM9AU5lR5y90n4eqmgw004';
+  document.querySelectorAll('[data-consultation-link]').forEach((link) => {
+    link.href = CONSULTATION_URL;
+  });
+</script>
 </body>
 </html>
