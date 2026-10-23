@@ -313,7 +313,10 @@
 @media(max-width:760px){
   /* The header fills its parent; only content sections retain .wrap gutters. */
   .ocean-site .site-nav.wrap{width:100%;max-width:none;margin-inline:0;background:#042331}
-  .ocean-site #leadership .leadership-focus-grid .approach-link{
+  .ocean-site :is(#work,#leadership) .practice-card .approach-link{
+    align-self:center;
+    width:fit-content;
+    margin-inline:auto;
     height:auto;
     min-height:48px;
     max-width:calc(100% - 24px);

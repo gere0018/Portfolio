@@ -307,7 +307,6 @@ body.ocean-site{background:#041622;color:#e6fcff;--dive-position:25%;--dive-scal
 .approach-page section h2,.approach-page .ai-leadership h2,.recognition-showcase h2{font-size:clamp(24px,2.9vw,28px)}
 .detail-kicker{font-size:12px!important;letter-spacing:1.8px}
 @media(max-width:760px){.ocean-site .section-head h2,.ocean-site #work .section-head h2{font-size:26px}.ocean-site .core-intro h2{font-size:29px}.ocean-site .personal h2{font-size:27px}.ocean-site .contact h2{font-size:38px}.approach-page h1{font-size:clamp(32px,4.1vw,40px)}.approach-page section h2,.approach-page .ai-leadership h2,.recognition-showcase h2{font-size:clamp(24px,2.9vw,28px)}.ocean-site .eyebrow,.approach-page .detail-eyebrow{font-size:12px}.detail-kicker{font-size:12px!important}}
-@media(max-width:760px){.ocean-site #learn .video-art.thought{background:linear-gradient(135deg,#b8f7ff,#6de8f4);color:#003440;border:1px solid #d6fdff}.ocean-site #learn .video-art.thought>span{max-width:calc(100% - 58px);font-size:clamp(25px,7vw,34px);letter-spacing:-1px;line-height:1.1}.ocean-site #learn .video-art.thought:after{content:none}.ocean-site #learn .video-art.thought>small{color:#005b6b}.ocean-site #learn .video-art.thought .play{border-color:#005b6b;color:#005b6b}}
 
 /* Show the sprint as a repeatable quality process, not a speed-only claim. */
 .approach-page .sprint-method>h2{max-width:760px;margin:8px 0 16px}
