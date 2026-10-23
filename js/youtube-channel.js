@@ -1,8 +1,6 @@
-/* Update this value when refreshing the portfolio's rounded YouTube count.
-   An automatically refreshed count should come from a private serverless proxy,
-   never a YouTube API key embedded in browser code. */
+/* Legacy helper: current counts live in js/site-config.js. */
 document.addEventListener('DOMContentLoaded', () => {
   const count = document.querySelector('[data-youtube-subscribers]');
-  if (!count) return;
-  count.textContent = count.dataset.fallback || '8,400+';
+  const config = window.PORTFOLIO_CONFIG;
+  if (count && config) count.textContent = config.YOUTUBE_SUBSCRIBERS;
 });

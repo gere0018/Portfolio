@@ -98,14 +98,12 @@ body.ocean-site{background:#041622;color:#e6fcff;--dive-position:25%;--dive-scal
 .ocean-site #work .approach-link:hover{background:#7aefff;color:#00262b;transform:translateY(-2px)}
 .ocean-site footer .portfolio-credit strong{color:#7aefff;font-weight:800}
 
-/* Consultation links stay within the existing ocean button system. */
 .ocean-site .contact-actions .button{min-height:48px;padding:12px 22px}
 .ocean-site .contact-actions .contact-secondary{background:transparent!important;color:#e6fcff!important;border:1px solid #7aefff!important}
 .ocean-site .contact-actions .contact-secondary:hover{background:#063c48!important;color:#fff!important}
-.ocean-site .contact-invitation .consultation-copy{max-width:760px;margin:16px auto 0;color:#c7dfe5;font-size:15px;line-height:1.7}
 .ocean-site footer a{color:#c7dfe5;text-decoration:underline;text-decoration-color:#7aefff70;text-underline-offset:4px}
 .ocean-site footer a:hover{color:#7aefff}
-@media(max-width:760px){.ocean-site .contact-actions{flex-direction:column;gap:12px}.ocean-site .contact-actions .button{width:100%;max-width:420px}.ocean-site .contact-invitation .consultation-copy{font-size:14px}.ocean-site footer{flex-wrap:wrap;justify-content:center;gap:18px 24px;text-align:center}}
+@media(max-width:760px){.ocean-site .contact-actions{flex-direction:column;gap:12px}.ocean-site .contact-actions .button{width:100%;max-width:420px}.ocean-site footer{flex-wrap:wrap;justify-content:center;gap:18px 24px;text-align:center}}
 .ocean-site .contact-section{margin-top:70px;margin-bottom:50px;padding:45px;background:#042331ce;border:1px solid #7aefff30;border-radius:30px;backdrop-filter:blur(15px)}
 .ocean-site .contact-section .contact-invitation{padding-top:0}
 @media(max-width:760px){.ocean-site .contact-section{margin-top:50px;padding:30px 25px}}

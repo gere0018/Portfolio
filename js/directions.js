@@ -12,8 +12,8 @@ const motion=document.querySelector('.motion-toggle');
 function updateMotion(){site.classList.toggle('motion-paused',paused);motion.setAttribute('aria-pressed',String(paused));motion.textContent=paused?'Resume motion':'Pause motion';}
 motion.addEventListener('click',()=>{paused=!paused;updateMotion();updateDive();});
 reduced.addEventListener('change',()=>{paused=reduced.matches;updateMotion();});updateMotion();
-const sections=[...document.querySelectorAll('#experience,#work,#approach,#learn,#contact')];
-const names={experience:'WORK EXPERIENCE',work:'DESIGN LEADERSHIP',approach:'HUMAN FIRST',learn:'EDUCATION',contact:'LET’S CONNECT'};
+const sections=[...document.querySelectorAll('#work,#leadership,#experience,#learn,#approach,#contact')];
+const names={work:'DESIGN SYSTEMS',leadership:'STRATEGY & AI',experience:'EXPERIENCE',learn:'TEACHING',approach:'PRINCIPLES',contact:'LET’S CONNECT'};
 let active='';
 function updateDive(){
  const max=document.documentElement.scrollHeight-innerHeight;
