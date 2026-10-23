@@ -292,3 +292,37 @@
 @media(max-width:370px){
   .ocean-site :is(#work,#leadership).section-panel{padding-inline:14px}
 }
+
+/* Phone rendering: one static ocean image, without scroll-driven brightness,
+   blended light layers, particles, or backdrop blur. Keep its height stable
+   when Safari expands/collapses the toolbar. Match this query in directions.js. */
+@media(max-width:760px), (max-height:500px) and (pointer:coarse){
+  .ocean-site .ocean-environment{
+    inset:0 0 auto;
+    height:100vh;
+    height:100lvh;
+    background:linear-gradient(#02132155,#02132155),#041622 url('../img/ocean-of-ideas.png') center 25%/cover no-repeat;
+  }
+  .ocean-site .ocean-environment>*{display:none}
+  .ocean-site .journey :is(.site-nav,.hero-copy,.proof-section,.role-section,.teaching-section,.journey-ending,.dive-controls,#work,#leadership,#approach,#learn){
+    -webkit-backdrop-filter:none;
+    backdrop-filter:none;
+  }
+}
+
+@media(max-width:760px){
+  /* The header fills its parent; only content sections retain .wrap gutters. */
+  .ocean-site .site-nav.wrap{width:100%;max-width:none;margin-inline:0;background:#042331}
+  .ocean-site :is(#work,#leadership) .practice-card .approach-link{
+    align-self:center;
+    width:fit-content;
+    margin-inline:auto;
+    height:auto;
+    min-height:48px;
+    max-width:calc(100% - 24px);
+    padding:12px 18px;
+    white-space:normal;
+    text-align:center;
+    line-height:1.4;
+  }
+}
