@@ -69,22 +69,6 @@ body.ocean-site{background:#041622;color:#e6fcff;--dive-position:25%;--dive-scal
 
 @media(max-width:760px){.brand-avatar{width:40px;height:40px}.ocean-site .world-heading,.ocean-site .central-world.avatar-world{margin-left:0}.ocean-site .credentials{padding-bottom:145px}.experience-heading{width:100%}.experience-creature{right:50%;translate:50px 15px}.experience-creature.encounter-arrived{translate:50% 0}.practice-card:hover{transform:none}}
 
-/* Mobile viewport refinements. Keep the sticky menu edge-to-edge and let long
-   card actions wrap with enough vertical breathing room. */
-@media(max-width:760px){
- .ocean-site .site-nav{box-sizing:border-box;width:100vw;max-width:none;margin-left:calc(50% - 50vw);padding-inline:max(18px,5%)}
- .ocean-site #work .approach-link{box-sizing:border-box;width:max-content;max-width:calc(100% - 28px);height:auto;min-height:52px;margin:12px auto 18px;padding:10px 18px;white-space:normal;text-align:center;line-height:1.35}
-}
-
-/* The scroll-driven lighting and animated scenery can stutter during touch
-   scrolling. Keep a calm, fixed composition on phone-sized screens. */
-@media(max-width:600px){
- .ocean-site .ocean-image{animation:none;transform:scale(1.04);background-position:center 25%;transition:none}
- .ocean-site .ocean-plankton i{animation:none;opacity:.2}
- .ocean-site .ocean-rays{transform:rotate(-22deg);transition:none}
- .ocean-site .ocean-light{translate:0 0;transition:none;background:radial-gradient(ellipse at 50% 25%,#00e5ff1a,transparent 42%)}
-}
-
 /* A small welcome gesture on the hero avatar. */
 .ocean-site .avatar-world .avatar-illustration.avatar-rest,.ocean-site .avatar-world .avatar-illustration.avatar-wave{transition:opacity .42s ease}
 .ocean-site .avatar-world .avatar-illustration.avatar-wave{opacity:0}
