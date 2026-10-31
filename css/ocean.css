@@ -227,7 +227,7 @@ body.ocean-site{background:#041622;color:#e6fcff;--dive-position:25%;--dive-scal
 .ocean-site #work .strategy-art:before,.ocean-site #work .strategy-art:after{display:none}
 .ocean-site #learn .video{filter:none;-webkit-filter:none}
 .ocean-site #learn .video h3{color:#e6fcff}
-.ocean-site #work>.section-head>div>.eyebrow,.ocean-site #approach>.core-intro>.eyebrow,.ocean-site #learn>.section-head>div>.eyebrow,.ocean-site .personal-context>div>.eyebrow,.ocean-site .contact-invitation>.eyebrow{display:block;padding-bottom:15px;margin-bottom:17px;border-bottom:1px solid #7aefff35}
+.ocean-site #approach>.core-intro>.eyebrow,.ocean-site #learn>.section-head>div>.eyebrow,.ocean-site .personal-context>div>.eyebrow,.ocean-site .contact-invitation>.eyebrow{display:block;padding-bottom:0;margin-bottom:17px;border-bottom:0}
 .ocean-site #work .practice-card>.approach-link{margin-bottom:16px}
 .ocean-site .personal-contact{margin-top:150px;padding:45px;background:#042331ce;border-radius:30px}
 .ocean-site .personal-context{display:grid;grid-template-columns:minmax(0,1fr) 220px minmax(0,1fr);align-items:center;gap:36px;padding-bottom:32px;border-bottom:1px solid #7aefff35;text-align:left}
