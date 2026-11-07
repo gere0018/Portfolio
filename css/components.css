@@ -1,0 +1,139 @@
+/* Portfolio primitives. Keep placement and content layout on the page. */
+.ds-button {
+  --button-background: var(--ds-color-accent-strong);
+  --button-foreground: var(--ds-color-ink);
+  --button-border: transparent;
+  --button-hover: var(--ds-color-accent);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--ds-space-1);
+  min-height: var(--ds-control-height);
+  max-width: 100%;
+  padding: var(--ds-space-1) var(--ds-space-3);
+  border: 1px solid var(--button-border);
+  border-radius: var(--ds-radius-control);
+  background: var(--button-background);
+  color: var(--button-foreground);
+  font: 800 1rem/1.4 var(--ds-font-body);
+  text-align: center;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+  transition: background-color .2s;
+}
+
+.ds-button--secondary {
+  --button-background: transparent;
+  --button-foreground: var(--ds-color-text);
+  --button-border: var(--ds-color-accent);
+  --button-hover: var(--ds-color-action-hover);
+}
+
+.ds-button:hover {
+  background-color: var(--button-hover);
+  color: var(--button-foreground);
+  text-decoration: none;
+}
+
+.ds-button:focus-visible {
+  outline: var(--ds-focus-width) solid var(--ds-color-accent);
+  outline-offset: var(--ds-focus-offset);
+}
+
+/* Navigation links have their own typography and color rules. */
+@media (min-width: 761px) {
+  .ocean-site .site-nav nav .ds-button {
+    border-color: var(--button-border);
+    border-radius: var(--ds-radius-control);
+    background: var(--button-background);
+    color: var(--button-foreground);
+  }
+
+  .ocean-site .site-nav nav .ds-button:hover {
+    background: var(--button-hover);
+  }
+}
+
+.ds-surface {
+  border: 1px solid var(--ds-color-border);
+  border-radius: var(--ds-radius-panel);
+  background: var(--ds-color-panel);
+  backdrop-filter: blur(var(--ds-surface-blur));
+}
+
+.ds-surface--glass {
+  border-color: var(--ds-color-divider);
+  background: var(--ds-color-surface-glass);
+  box-shadow: var(--ds-shadow-panel);
+}
+
+.ds-section {
+  position: relative;
+  width: min(var(--ds-section-width), calc(100% - var(--ds-section-gutter)));
+  min-width: 0;
+  margin: var(--ds-section-gap) auto 0;
+  padding: var(--ds-section-padding);
+}
+
+.ds-section--offer {
+  width: min(var(--ds-offer-width), calc(100% - var(--ds-space-5)));
+  margin: var(--ds-space-4) auto;
+  padding: var(--ds-space-panel);
+}
+
+.ds-section--offer.ds-surface {
+  border-radius: var(--ds-radius-card);
+}
+
+.ds-surface--glass.ocean-active {
+  border-color: var(--ds-color-border-strong);
+  box-shadow: var(--ds-shadow-panel);
+}
+
+@media (max-width: 760px) {
+  .ds-section {
+    width: calc(100% - var(--ds-section-mobile-gutter));
+    margin-top: var(--ds-space-section);
+    padding: var(--ds-section-mobile-padding);
+  }
+
+  .ds-section--offer {
+    margin-top: var(--ds-space-4);
+  }
+
+  .ds-surface {
+    border-radius: var(--ds-radius-card);
+    backdrop-filter: none;
+  }
+
+  .ocean-site .site-nav nav .ds-button {
+    border-radius: var(--ds-radius-control);
+    background: var(--button-background);
+    color: var(--button-foreground);
+  }
+}
+
+@media (max-width: 370px) {
+  .ds-section:not(.ds-section--offer) {
+    padding-inline: var(--ds-space-2);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ds-button {
+    transition: none;
+  }
+}
+
+.ds-surface--card {
+  border-radius: var(--ds-radius-card);
+  background: var(--ds-color-card);
+  backdrop-filter: none;
+}
+
+.ds-section-divider {
+  margin-top: var(--ds-space-5);
+  padding-top: var(--ds-space-4);
+  border-top: 1px solid var(--ds-color-divider);
+}

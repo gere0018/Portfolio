@@ -17,11 +17,12 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=DM+Sans:wght@400;500;600;700&family=Fraunces:wght@600&family=Manrope:wght@400;500;600;700;800&family=Nunito:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/directions.css">
-<link rel="stylesheet" href="css/world.css">
-<link rel="stylesheet" href="css/ocean.css?v=20261030-no-section-header-lines">
-<link rel="stylesheet" href="css/design-systems.css?v=20261107-moonglade-fit">
-<link rel="stylesheet" href="css/work-with-me.css">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/directions.css?v=portfolio-system-1">
+<link rel="stylesheet" href="css/world.css?v=portfolio-system-1">
+<link rel="stylesheet" href="css/ocean.css?v=portfolio-system-1">
+<link rel="stylesheet" href="css/design-systems.css?v=portfolio-system-1">
+<link rel="stylesheet" href="css/work-with-me.css?v=portfolio-system-1">
 <!-- Google tag (gtag.js) — GA4 property restored from the previous portfolio. -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-442ZKT40L5"></script>
 <script>
@@ -32,6 +33,7 @@
 </script>
 <script defer src="js/directions.js?v=20261023-mobile-static">
 </script>
+<link rel="stylesheet" href="css/components.css">
 </head>
 <body class="ocean-site">
 <div class="ocean-environment" aria-hidden="true">
@@ -68,15 +70,15 @@
 <a href="#leadership">Leadership</a>
 <a href="#experience">Experience</a>
 <a href="#learn">Teaching</a>
-<a class="button nav-contact" href="#contact">Contact</a>
+<a class="button nav-contact ds-button ds-button--primary" href="#contact">Contact</a>
 </nav>
 </header>
 <section class="immersive-hero" aria-labelledby="world-title">
 <div class="world-heading hero-copy">
 <h1 id="world-title"><span class="hero-title-line">Design Leader &amp; Educator</span><span class="hero-title-support">Design Systems · AI Enablement</span></h1>
 <div class="hero-actions">
-<a class="button hero-primary" href="work-with-me.html">Work with me</a>
-<a class="button hero-secondary" data-config-href="RESUME_URL" target="_blank" rel="noreferrer">Resume</a>
+<a class="button hero-primary ds-button ds-button--primary" href="work-with-me.html">Work with me</a>
+<a class="button hero-secondary ds-button ds-button--secondary" data-config-href="RESUME_URL" target="_blank" rel="noreferrer">Resume</a>
 </div>
 </div>
 <div class="central-world avatar-world">
@@ -100,7 +102,7 @@
 </div>
 
 
-<section id="work" class="wrap section-panel design-systems-section" aria-labelledby="systems-title">
+<section id="work" class="wrap ds-section ds-surface ds-surface--glass design-systems-section" aria-labelledby="systems-title">
   <div class="section-head">
     <div>
       <div class="eyebrow">DESIGN SYSTEMS</div>
@@ -109,7 +111,7 @@
     <p>I build design systems that help teams ship consistent interfaces across applications. Shared design tokens, theming, and reusable components connect Figma and code, while documented patterns help AI agents build with the same system.</p>
   </div>
   <div class="practice-grid">
-    <article class="practice-card">
+    <article class="practice-card ds-surface ds-surface--card">
       <div class="card-art cvent-card-art" aria-hidden="true">
         <div class="cvent-token-window">
           <small>FOUNDATIONS → TOKENS → COMPONENTS</small>
@@ -120,9 +122,9 @@
       <small>CVENT · MULTI-BRAND SYSTEM</small>
       <h3>A multi-brand system 50 product teams can build on.</h3>
       <p>I led the team's efforts to create and evolve a multi-brand Figma design system used by about 50 product teams. The design system team built a complete token system in code and Figma for a company-wide theming service and shared event-theme object.</p>
-      <a class="button approach-link" href="projects/cvent-design-system.html">Explore the Cvent design system</a>
+      <a class="button approach-link ds-button ds-button--primary" href="projects/cvent-design-system.html">Explore the Cvent design system</a>
     </article>
-    <article class="practice-card">
+    <article class="practice-card ds-surface ds-surface--card">
       <div class="card-art moonglade-card-art" aria-hidden="true">
         <div class="moonglade-card-emblem">
           <img src="img/moonglade-cover.png" alt="" width="590" height="650" loading="lazy">
@@ -136,9 +138,9 @@
       <small>MOONGLADE · AGENT-READY DESIGN SYSTEM</small>
       <h3>A design system I built in Figma and React.</h3>
       <p>I built Moonglade from the ground up, carried its tokens and components into a React library, and wrote guidance so AI agents can reuse it. I teach the full workflow in a video tutorial.</p>
-      <a class="button approach-link" href="projects/moonglade-design-system.html">Explore the Moonglade design system</a>
+      <a class="button approach-link ds-button ds-button--primary" href="projects/moonglade-design-system.html">Explore the Moonglade design system</a>
     </article>
-    <article class="practice-card">
+    <article class="practice-card ds-surface ds-surface--card">
       <div class="card-art system-art">
         <div class="system-window">
           <small>QUEST ON DEMAND · SHARED FOUNDATION</small>
@@ -150,14 +152,14 @@
       <small>QUEST SOFTWARE · 2018–2022</small>
       <h3>Quest Software: building a system from zero across three countries.</h3>
       <p>Connected eight designers across three countries to create a shared system for eight product modules, partnering with engineering on the component foundation.</p>
-      <a class="button approach-link" href="projects/systems-practice.html">Explore the Quest system</a>
+      <a class="button approach-link ds-button ds-button--primary" href="projects/systems-practice.html">Explore the Quest system</a>
     </article>
   </div>
 </section>
 
 
 
-<section id="leadership" class="wrap section-panel leadership-section" aria-labelledby="leadership-title">
+<section id="leadership" class="wrap ds-section ds-surface ds-surface--glass leadership-section" aria-labelledby="leadership-title">
   <div class="leadership-content">
     <div class="role-section-heading">
       <div class="eyebrow">LEADERSHIP, STRATEGY &amp; AI ENABLEMENT</div>
@@ -165,25 +167,25 @@
     </div>
     <p class="leadership-intro">I connect strategy, team leadership, and practical AI workflows to help people do their best work and carry it forward.</p>
     <div class="practice-grid leadership-focus-grid">
-      <article class="practice-card">
+      <article class="practice-card ds-surface ds-surface--card">
         <div class="card-art roi-art"><img src="img/ai-roi-workflow.png" alt="An AI-assisted workflow progressing from wireframes to a finished interface along a rising curve"></div>
         <small>STRATEGY &amp; LEADERSHIP</small>
         <h3>Set direction. Help teams deliver.</h3>
         <p>I lead UX across three teams, connecting company and customer priorities to clear design outcomes. My approach combines thoughtful team leadership with practical AI pilots: four of six teams reached a working prototype in one week, while clear requirements and protected time helped discovery move from about three months to two sprints.</p>
-        <a class="button approach-link" href="projects/strategy-leadership.html">Explore strategy and leadership</a>
+        <a class="button approach-link ds-button ds-button--primary" href="projects/strategy-leadership.html">Explore strategy and leadership</a>
       </article>
-      <article class="practice-card">
+      <article class="practice-card ds-surface ds-surface--card">
         <div class="card-art learning-art"><img src="img/ai-tools-composition.png" alt="A luminous composition of Claude, Figma, ChatGPT, Codex, and Claude Design symbols"></div>
         <small>EDUCATION &amp; AI ENABLEMENT</small>
         <h3>Make useful practice easier to share.</h3>
         <p>I teach UX and UI at Algonquin College and create practical YouTube tutorials to help designers thrive in the age of AI. Through tools like Figma MCP, I share AI-native workflows that build confidence and keep their practice current.</p>
-        <a class="button approach-link" href="projects/education-enablement.html">Explore education and enablement</a>
+        <a class="button approach-link ds-button ds-button--primary" href="projects/education-enablement.html">Explore education and enablement</a>
       </article>
     </div>
   </div>
   <div class="speaking-band" aria-labelledby="speaking-band-title">
     <div><div class="eyebrow">SPEAKING &amp; WORKSHOPS</div><h2 id="speaking-band-title">Bring practical design learning to your team or event.</h2></div>
-    <a class="button" href="work-with-me.html">Invite me to teach or speak</a>
+    <a class="button ds-button ds-button--primary" href="work-with-me.html">Invite me to teach or speak</a>
   </div>
 </section>
 
@@ -340,10 +342,10 @@
     <h2 id="contact-title">Good things start<br>with a <span>conversation.</span></h2>
     <p>I speak at UX and design conferences, lead hands-on AI design workshops, and help designers grow through one-on-one career guidance and portfolio reviews. I also partner with small businesses to build websites and apps.</p>
     <div class="contact-actions">
-      <a class="button contact-primary" href="work-with-me.html">Work with Me</a>
-      <a class="button contact-secondary" data-config-href="LINKEDIN_URL" target="_blank" rel="noreferrer">LinkedIn</a>
-      <a class="button contact-secondary" data-config-href="EMAIL_HREF">Email</a>
-      <a class="button contact-secondary" data-config-href="RESUME_URL" target="_blank" rel="noreferrer">Resume</a>
+      <a class="button contact-primary ds-button ds-button--primary" href="work-with-me.html">Work with Me</a>
+      <a class="button contact-secondary ds-button ds-button--secondary" data-config-href="LINKEDIN_URL" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a class="button contact-secondary ds-button ds-button--secondary" data-config-href="EMAIL_HREF">Email</a>
+      <a class="button contact-secondary ds-button ds-button--secondary" data-config-href="RESUME_URL" target="_blank" rel="noreferrer">Resume</a>
     </div>
   </div>
 </section>
