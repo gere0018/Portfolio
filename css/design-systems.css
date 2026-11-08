@@ -246,7 +246,7 @@
 .leadership-focus-grid .practice-card>h3{margin:10px 12px 0;color:var(--ds-color-text);font:400 clamp(18px,2vw,23px)/1.4 var(--ds-font-display)}
 .leadership-focus-grid .practice-card>p{flex:1;margin:12px 12px 0;color:var(--ds-color-body);font-size:14px;line-height:1.65}
 .practice-card > .approach-link.ds-button{align-self:center;width:max-content;text-align:center;white-space:normal}
-.leadership-focus-grid .practice-card .approach-link{margin:18px 12px 0}
+.leadership-focus-grid .practice-card .approach-link{margin:18px auto 0}
 .leadership-subheading{margin-top:8px}
 .leadership-subheading .eyebrow{margin-bottom:10px}
 .leadership-subheading h2{color:var(--ds-color-text);font:400 clamp(23px,3vw,30px)/1.35 var(--ds-font-display)}
