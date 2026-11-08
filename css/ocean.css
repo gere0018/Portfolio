@@ -94,7 +94,6 @@ body.ocean-site{background:var(--ds-color-ocean);color:var(--ds-color-text);--di
 .ocean-site #work .practice-card>h3{margin:13px 15px 0;font:400 23px/1.35 'Aclonica',sans-serif;letter-spacing:-.8px;color:var(--ds-color-text)}
 .ocean-site #work .practice-card>p{margin:15px 15px 0;font-size:14px;line-height:1.65;color:var(--ds-color-body)}
 .ocean-site #work .practice-card>p{flex:1}
-.ocean-site #work .approach-link{align-self:center;width:max-content}
 .ocean-site footer .portfolio-credit strong{color:var(--ds-color-accent);font-weight:800}
 
 .ocean-site footer a{color:var(--ds-color-body);text-decoration:underline;text-decoration-color:var(--ds-color-border-strong);text-underline-offset:4px}

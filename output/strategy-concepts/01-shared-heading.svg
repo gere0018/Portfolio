@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1380" height="600" viewBox="0 0 1380 600" role="img" aria-label="Three paths converge on one destination">
+  <rect width="1380" height="600" fill="#0b2836"/>
+  <g fill="none" stroke="#477480" stroke-width="2" opacity=".45">
+    <path d="M50 140H1330M50 220H1330M50 300H1330M50 380H1330M50 460H1330"/>
+    <path d="M240 85V515M465 85V515M690 85V515M915 85V515M1140 85V515"/>
+  </g>
+  <g fill="none" stroke-width="7" stroke-linecap="round">
+    <path d="M240 140C515 140 635 165 800 242S992 300 1140 300" stroke="#f2c879"/>
+    <path d="M240 300H1140" stroke="#e6f5f3"/>
+    <path d="M240 460C515 460 635 435 800 358S992 300 1140 300" stroke="#65dce2"/>
+  </g>
+  <circle cx="240" cy="140" r="15" fill="#f2c879"/>
+  <circle cx="240" cy="300" r="15" fill="#e6f5f3"/>
+  <circle cx="240" cy="460" r="15" fill="#65dce2"/>
+  <circle cx="1140" cy="300" r="61" fill="#0b2836" stroke="#e6f5f3" stroke-width="3"/>
+  <circle cx="1140" cy="300" r="23" fill="#e6f5f3"/>
+</svg>

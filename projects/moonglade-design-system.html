@@ -16,34 +16,67 @@
   <header><a href="../index.html#work">← Back to design systems</a></header>
   <main>
     <p class="detail-eyebrow">DESIGN SYSTEMS · MOONGLADE</p>
-    <h1>Building an agent-ready design system from Figma to React.</h1>
-    <p class="detail-intro">I created Moonglade end to end. I built the design system in Figma, implemented it as a reusable React library, and turned the workflow into a full video tutorial so other designers could build their own.</p>
+    <h1>From Figma library to agent-ready React design system.</h1>
+    <p class="detail-intro">I built Moonglade to explore what it takes for designers, developers, and AI agents to build with the same design system. I started with the foundations in Figma, turned them into a reusable React library, and recorded the workflow so other designers could follow it.</p>
+
+    <figure class="detail-figure">
+      <img src="../img/moonglade-case-cover.png" width="1440" height="900" alt="Moonglade’s Figma cover, featuring a cyan crescent moon reflected in a dark lake">
+      <figcaption>The original Moonglade cover from Figma.</figcaption>
+    </figure>
+
+    <div class="detail-facts" aria-label="Moonglade project scope">
+      <div><strong>Figma</strong><span>Variables, components, and a dashboard example</span></div>
+      <div><strong>React</strong><span>A reusable library with a Storybook catalog</span></div>
+      <div><strong>AI agents</strong><span>Documented tokens, props, and rules for reuse</span></div>
+    </div>
 
     <section class="ds-section-divider">
       <p class="detail-kicker">FIGMA FOUNDATIONS</p>
-      <h2>Design a system that can carry into code.</h2>
-      <p>I defined the color, typography, spacing, and radius foundations in Figma, then built reusable components, icons, and an example page. The Figma playbook documents the path from the design system to code.</p>
-      <p><a href="https://www.figma.com/design/PUFxeUCIx6QINxRoSx4biN/Moonglade-DS-Nehmat?node-id=0-1">Explore Moonglade in Figma</a></p>
-    </section>
-
-    <section class="ds-section-divider">
-      <p class="detail-kicker">REACT IMPLEMENTATION</p>
-      <h2>Make the same system reusable in applications.</h2>
-      <p>I built the React and TypeScript library around tokens generated from Figma variables. The library supports dark and light themes, and Storybook lets people browse components and inspect their variants and states.</p>
-      <p><a href="https://github.com/gere0018/moonglade-design-system">Explore the source code on GitHub</a></p>
+      <h2>Start with tokens and test them in a real layout.</h2>
+      <p>I set up color, typography, spacing, and radius in Figma. Semantic variables describe what a color does, such as a page surface or an interactive state. Light and dark modes can then change those values while components keep the same references.</p>
+      <figure class="detail-figure moonglade-palette">
+        <figcaption>Selected Moonglade tokens · Dark mode</figcaption>
+        <ul class="moonglade-swatches">
+          <li><span class="moonglade-swatch moonglade-swatch--page" aria-hidden="true"></span><code>surface/page</code></li>
+          <li><span class="moonglade-swatch moonglade-swatch--text" aria-hidden="true"></span><code>text/body</code></li>
+          <li><span class="moonglade-swatch moonglade-swatch--action" aria-hidden="true"></span><code>interactive/primary/default</code></li>
+        </ul>
+      </figure>
+      <p>I built component variants and states, then assembled a dashboard to see how navigation, data cards, and controls worked together in context.</p>
+      <figure class="detail-figure">
+        <img src="../img/moonglade-case-dashboard.png" width="1440" height="1141" loading="lazy" alt="Moonglade example dashboard built from the Figma component library">
+        <figcaption>The example dashboard brings the foundations and components together on one screen.</figcaption>
+      </figure>
+      <a class="ds-button ds-button--secondary" href="https://www.figma.com/design/2vpHqxqYMRBZMP3GTVQ1up/Moonglade-DS-Nehmat?node-id=0-1">Explore the Figma library</a>
     </section>
 
     <section class="ds-section-divider">
       <p class="detail-kicker">AGENT READINESS</p>
-      <h2>Show agents what to reuse.</h2>
-      <p>The repository gives AI agents a component manifest, usage documentation, and rules for building UI. Those rules tell agents to check for existing components, apply semantic tokens, and verify both themes. The project also includes Code Connect templates that map Figma components to their code counterparts.</p>
+      <h2>Give agents enough context to reuse the system.</h2>
+      <p>I aligned Figma component properties with React props where possible, so an agent can carry decisions such as button variant and size from design into code. Code Connect templates describe how Figma components map to their React counterparts.</p>
+      <figure class="detail-figure">
+        <img src="../img/moonglade-case-buttons.png" width="1210" height="460" loading="lazy" alt="Moonglade button variants, sizes, and states in Figma">
+        <figcaption>Button variants and states make the available choices explicit.</figcaption>
+      </figure>
+      <p>In the repo, a component manifest and usage guide tell agents what is available. The instructions tell them to look for an existing component first, use semantic tokens, and check both themes.</p>
+      <a class="ds-button ds-button--secondary" href="https://www.figma.com/design/2vpHqxqYMRBZMP3GTVQ1up/Moonglade-DS-Nehmat?node-id=2075-2">Read the design-to-code playbook</a>
     </section>
 
     <section class="ds-section-divider">
-      <p class="detail-kicker">TEACHING THE WORKFLOW</p>
-      <h2>Help other designers build their own system.</h2>
-      <p>I recorded a full video tutorial on the workflow. The Figma playbook is also available as a written reference for moving from design to code.</p>
-      <p><a href="https://www.figma.com/design/PUFxeUCIx6QINxRoSx4biN/Moonglade-DS-Nehmat?node-id=2075-2">Read the design-to-code playbook</a></p>
+      <p class="detail-kicker">GITHUB IMPLEMENTATION</p>
+      <h2>Turn the Figma system into a React library.</h2>
+      <p>I implemented Moonglade as a React and TypeScript library. The repository generates CSS tokens from Figma variables and React icons from exported icon data. I used Tailwind and styled shadcn/ui with Moonglade’s tokens, then used Storybook to document components, variants, and states in both themes.</p>
+      <a class="ds-button ds-button--secondary" href="https://github.com/gere0018/moonglade-design-system">Explore the GitHub repository</a>
+    </section>
+
+    <section class="ds-section-divider">
+      <p class="detail-kicker">VIDEO WALKTHROUGH</p>
+      <h2>Watch the full design-to-code workflow.</h2>
+      <p>Follow along as I build the Figma library, prepare it for AI agents, and carry it into code.</p>
+      <figure class="detail-figure">
+        <iframe class="ds-video-embed" src="https://www.youtube-nocookie.com/embed/tUnrxo0qTAw" title="Moonglade design system tutorial" loading="lazy" allow="encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+      </figure>
+      <a class="ds-button ds-button--secondary" href="https://youtu.be/tUnrxo0qTAw" target="_blank" rel="noopener noreferrer">Open on YouTube</a>
     </section>
   </main>
 </body>

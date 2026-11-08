@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1380" height="600" viewBox="0 0 1380 600" role="img" aria-label="Three workstreams ordered around a shared milestone">
+  <rect width="1380" height="600" fill="#102d39"/>
+  <rect x="165" y="94" width="1050" height="412" rx="20" fill="#153b48" stroke="#78acb2" stroke-width="2"/>
+  <g stroke="#5c8892" stroke-width="2" fill="none">
+    <path d="M215 209H1165M215 310H1165M215 411H1165"/>
+    <path d="M310 143V458M500 143V458M690 143V458M880 143V458M1070 143V458" opacity=".55"/>
+  </g>
+  <g fill="#6fd4d4"><rect x="249" y="187" width="310" height="44" rx="9"/><rect x="570" y="187" width="196" height="44" rx="9"/></g>
+  <g fill="#e0eeea"><rect x="349" y="288" width="220" height="44" rx="9"/><rect x="581" y="288" width="185" height="44" rx="9"/></g>
+  <g fill="#94b9ba"><rect x="448" y="389" width="148" height="44" rx="9"/><rect x="608" y="389" width="158" height="44" rx="9"/></g>
+  <path d="M805 143V458" stroke="#f3c97f" stroke-width="4"/>
+  <path d="M805 122l15 15-15 15-15-15Z" fill="#f3c97f"/>
+  <path d="M851 310h230m-20-19 20 19-20 19" fill="none" stroke="#f3c97f" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

@@ -45,3 +45,11 @@
 .workshop-topics{margin:28px 0}.workshop-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:12px}.workshop-topic-grid article{padding:18px;border:1px solid var(--ds-color-border);border-radius:14px;background:var(--palette-teal-07-7)}.workshop-topic-grid article>span{color:var(--ds-color-accent);font-size:11px;font-weight:800;letter-spacing:1.5px}.workshop-topic-grid h3{margin:10px 0 0;color:var(--ds-color-text);font:700 16px/1.45 var(--ds-font-body)}
 @media(max-width:760px){.speaking-band{width:calc(100% - 40px);flex-direction:column;align-items:flex-start;padding:22px}.work-page-intro{padding-top:48px}.credibility-strip{grid-template-columns:repeat(2,minmax(0,1fr));width:calc(100% - 40px)}.topic-grid{grid-template-columns:1fr}.workshop-topic-grid{grid-template-columns:1fr}.work-page-footer{width:calc(100% - 40px);flex-direction:column}.form-grid{grid-template-columns:1fr}.full-field{grid-column:auto}}
 @media(max-width:520px){.speaker-intro{grid-template-columns:1fr;gap:18px}.speaker-intro img{width:150px;height:160px}.talk-example{padding:20px}}
+
+.mentor-credential {
+  display: block;
+  width: 100%;
+  max-width: 36rem;
+  height: auto;
+  margin: var(--ds-space-3) 0;
+}

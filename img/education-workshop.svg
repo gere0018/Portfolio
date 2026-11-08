@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1380" height="600" viewBox="0 0 1380 600">
+  <title>A hands-on AI workshop</title>
+  <rect width="1380" height="600" fill="#102d39"/>
+  <path d="M0 512Q380 464 720 516T1380 492V600H0Z" fill="#235766"/>
+  <rect x="608" y="115" width="590" height="240" rx="24" fill="#153b48" stroke="#80b3b5" stroke-width="3"/>
+  <g fill="#e4eee5" font-family="system-ui,sans-serif" font-size="29" font-weight="600" text-anchor="middle"><g transform="translate(710 230)"><path fill="#f24e1e" d="M-18-27h18v18h-18a9 9 0 0 1 0-18" /><path fill="#ff7262" d="M0-27h9a9 9 0 0 1 0 18H0" /><path fill="#a259ff" d="M-18-9H0V9h-18a9 9 0 0 1 0-18" /><circle fill="#1abcfe" cx="9" r="9" /><path fill="#0acf83" d="M-18 9H0v9a9 9 0 1 1-18-9" /></g><text x="710" y="308">Figma</text><g transform="translate(900 230)"><g stroke="#bb86fc" stroke-width="5" stroke-linecap="round"><path d="M0-8V-22" transform="rotate(0)" /><path d="M0-8V-25" transform="rotate(30)" /><path d="M0-8V-28" transform="rotate(60)" /><path d="M0-8V-22" transform="rotate(90)" /><path d="M0-8V-25" transform="rotate(120)" /><path d="M0-8V-28" transform="rotate(150)" /><path d="M0-8V-22" transform="rotate(180)" /><path d="M0-8V-25" transform="rotate(210)" /><path d="M0-8V-28" transform="rotate(240)" /><path d="M0-8V-22" transform="rotate(270)" /><path d="M0-8V-25" transform="rotate(300)" /><path d="M0-8V-28" transform="rotate(330)" /></g></g><text x="900" y="308">Claude</text><g transform="translate(1090 230)"><g fill="none" stroke="#e4eee5" stroke-width="3"><path d="M0-11v-12c18-9 30 9 20 21L9 4" transform="rotate(0)" /><path d="M0-11v-12c18-9 30 9 20 21L9 4" transform="rotate(60)" /><path d="M0-11v-12c18-9 30 9 20 21L9 4" transform="rotate(120)" /><path d="M0-11v-12c18-9 30 9 20 21L9 4" transform="rotate(180)" /><path d="M0-11v-12c18-9 30 9 20 21L9 4" transform="rotate(240)" /><path d="M0-11v-12c18-9 30 9 20 21L9 4" transform="rotate(300)" /></g></g><text x="1090" y="308">ChatGPT</text></g>
+  <g fill="none" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke="#bb86fc">
+      <circle cx="452" cy="263" r="22"/>
+      <path d="M452 297v101m0-78-55 54m55-49 74-28 61-55M452 398l-37 91m37-91 43 91"/>
+    </g>
+    <g stroke="#74d4d4">
+      <circle cx="746" cy="387" r="19"/>
+      <path d="M746 418l15 60m-10-43 40 24 34-4"/>
+    </g>
+    <g stroke="#e4eee5">
+      <circle cx="1058" cy="387" r="19"/>
+      <path d="M1058 418l-13 60m10-43-38 24-34-4"/>
+    </g>
+  </g>
+  <path d="M678 477h450" stroke="#a5c8c5" stroke-width="9" stroke-linecap="round"/>
+  <path d="M713 480v44m380-44v44" stroke="#a5c8c5" stroke-width="5"/>
+  <path d="m815 466 12-29h55l-12 29zm153 0-12-29h-55l12 29z" fill="#102d39" stroke="#a5c8c5" stroke-width="4" stroke-linejoin="round"/>
+</svg>

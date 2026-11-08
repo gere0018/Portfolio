@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1380" height="600" viewBox="0 0 1380 600" role="img" aria-label="Three people cross a bridge toward the far shore">
+  <rect width="1380" height="600" fill="#102d39"/>
+  <circle cx="1060" cy="162" r="70" fill="#efc77e"/>
+  <path d="M0 440Q250 400 455 447T935 444T1380 418V600H0Z" fill="#235766"/>
+  <path d="M0 504Q285 474 528 515T1010 501T1380 486M0 544Q285 514 528 555T1010 541T1380 526" fill="none" stroke="#80b3b5" stroke-width="2"/>
+  <path d="M0 400H229V468H0ZM1151 400H1380V468H1151Z" fill="#44727a"/>
+  <path d="M220 406Q690 86 1160 406M300 359V457M475 286V457M690 246V457M905 286V457M1080 359V457" fill="none" stroke="#a5c8c5" stroke-width="4"/>
+  <path d="M220 407H1160" stroke="#e4eee5" stroke-width="16"/>
+  <g fill="none" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <g stroke="#e4eee5"><circle cx="560" cy="331" r="9"/><path d="M560 349l8 26 17 22m-17-22-18 22m13-39 18 3"/></g>
+    <g stroke="#74d4d4"><circle cx="682" cy="325" r="9"/><path d="M682 343l8 30 17 24m-17-24-19 24m15-43 20 3"/></g>
+    <g stroke="#efc77e"><circle cx="808" cy="330" r="9"/><path d="M808 348l8 26 17 23m-17-23-19 23m15-39 22 3"/></g>
+  </g>
+</svg>

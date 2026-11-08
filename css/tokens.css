@@ -305,3 +305,10 @@
   --palette-teal-99:#f8ffff;
   --palette-violet-53:#e9266d;
 }
+
+/* Moonglade dark-mode values for the case study specimen. */
+:root {
+  --moonglade-surface-page: #0a0d14;
+  --moonglade-text-body: #dde3eb;
+  --moonglade-interactive-primary-default: #00e5ff;
+}

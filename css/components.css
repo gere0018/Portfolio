@@ -137,3 +137,11 @@
   padding-top: var(--ds-space-4);
   border-top: 1px solid var(--ds-color-divider);
 }
+
+.ds-video-embed {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  background: var(--ds-color-panel-solid);
+}

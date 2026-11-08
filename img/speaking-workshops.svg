@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1380" height="600" viewBox="0 0 1380 600">
+  <title>Speaking to a room of designers</title>
+  <rect width="1380" height="600" fill="#102d39"/>
+  <path d="M0 465Q380 420 720 465T1380 449V600H0Z" fill="#235766"/>
+  <rect x="736" y="89" width="359" height="203" rx="24" fill="#153b48" stroke="#80b3b5" stroke-width="3"/>
+  <g fill="none" stroke="#74d4d4" stroke-width="5" stroke-linecap="round">
+    <path d="M802 226l69-50 65 22 92-54"/>
+    <circle cx="802" cy="226" r="8"/><circle cx="871" cy="176" r="8"/><circle cx="936" cy="198" r="8"/><circle cx="1028" cy="144" r="8"/>
+  </g>
+  <path d="M263 322h877" stroke="#a5c8c5" stroke-width="5" stroke-linecap="round"/>
+  <g fill="none" stroke="#bb86fc" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="579" cy="134" r="23"/>
+    <path d="M579 170v80m0-57-58 32m58-32 60 13 53-42m-113 86-32 61m32-61 36 61"/>
+  </g>
+  <g fill="none" stroke-width="7" stroke-linecap="round"><g transform="translate(530 376)" stroke="#80b3b5"><circle cy="-31" r="15"/><path d="M-34 32v-8a34 34 0 0 1 68 0v8"/></g><g transform="translate(635 376)" stroke="#80b3b5"><circle cy="-31" r="15"/><path d="M-34 32v-8a34 34 0 0 1 68 0v8"/></g><g transform="translate(740 376)" stroke="#80b3b5"><circle cy="-31" r="15"/><path d="M-34 32v-8a34 34 0 0 1 68 0v8"/></g><g transform="translate(845 376)" stroke="#80b3b5"><circle cy="-31" r="15"/><path d="M-34 32v-8a34 34 0 0 1 68 0v8"/></g><g transform="translate(950 376)" stroke="#80b3b5"><circle cy="-31" r="15"/><path d="M-34 32v-8a34 34 0 0 1 68 0v8"/></g><g transform="translate(1055 376)" stroke="#80b3b5"><circle cy="-31" r="15"/><path d="M-34 32v-8a34 34 0 0 1 68 0v8"/></g><g transform="translate(475 480)" stroke="#e4eee5"><circle cy="-31" r="15"/><path d="M-34 32v-8a34 34 0 0 1 68 0v8"/></g><g transform="translate(580 480)" stroke="#e4eee5"><circle cy="-31" r="15"/><path d="M-34 32v-8a34 34 0 0 1 68 0v8"/></g><g transform="translate(685 480)" stroke="#e4eee5"><circle cy="-31" r="15"/><path d="M-34 32v-8a34 34 0 0 1 68 0v8"/></g><g transform="translate(790 480)" stroke="#e4eee5"><circle cy="-31" r="15"/><path d="M-34 32v-8a34 34 0 0 1 68 0v8"/></g><g transform="translate(895 480)" stroke="#e4eee5"><circle cy="-31" r="15"/><path d="M-34 32v-8a34 34 0 0 1 68 0v8"/></g><g transform="translate(1000 480)" stroke="#e4eee5"><circle cy="-31" r="15"/><path d="M-34 32v-8a34 34 0 0 1 68 0v8"/></g><g transform="translate(1105 480)" stroke="#e4eee5"><circle cy="-31" r="15"/><path d="M-34 32v-8a34 34 0 0 1 68 0v8"/></g></g>
+</svg>
