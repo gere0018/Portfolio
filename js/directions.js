@@ -15,7 +15,7 @@ function updateMotion(){site.classList.toggle('motion-paused',paused);motion.set
 motion.addEventListener('click',()=>{paused=!paused;updateMotion();updateDive();});
 reduced.addEventListener('change',()=>{paused=reduced.matches;updateMotion();});updateMotion();
 const sections=[...document.querySelectorAll('#work,#leadership,#experience,#learn,#approach,#contact')];
-const names={work:'DESIGN SYSTEMS',leadership:'STRATEGY & AI',experience:'EXPERIENCE',learn:'TEACHING',approach:'PRINCIPLES',contact:'LET’S CONNECT'};
+const names={work:'DESIGN SYSTEMS',leadership:'STRATEGY & AI',experience:'EXPERIENCE',learn:'TEACHING',approach:'ABOUT ME',contact:'LET’S CONNECT'};
 let active='';
 function updateDive(){
  const max=document.documentElement.scrollHeight-innerHeight;

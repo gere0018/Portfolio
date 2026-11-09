@@ -116,11 +116,14 @@
 .ocean-site .teaching-section .video .video-button:hover{background:var(--ds-color-action-hover)}
 .ocean-site .teaching-section .youtube-cta{display:inline-flex;min-height:48px;align-items:center;gap:10px;margin-top:26px;padding:12px 20px;border:0;border-radius:var(--ds-radius-control);background:var(--ds-color-accent-strong);color:var(--ds-color-ink);font:700 14px var(--ds-font-body);text-decoration:none}
 .ocean-site .teaching-section .youtube-cta:hover{background:var(--ds-color-accent);color:var(--ds-color-ink)}
-.ocean-site #approach.human-core{margin-top:75px;padding:42px 48px;background:var(--palette-teal-10-6)}
-.ocean-site .principles-section .core-intro h2{font:400 clamp(27px,4vw,38px)/1.3 var(--ds-font-display);letter-spacing:-.7px}
-.ocean-site .principles-section .core-intro>p{max-width:580px}
-.ocean-site .principles-section .principles{align-self:center}
-.ocean-site .personal-contact{margin-top:75px;margin-bottom:0}
+.ocean-site #approach.about-section{margin-top:75px;padding:42px 48px;background:var(--palette-teal-10-6)}
+.about-section h2,.about-section h3{color:var(--ds-color-text);font:400 clamp(1.35rem,3vw,1.8rem)/1.3 var(--ds-font-display)}
+.ocean-site .about-section .personal-context h2{margin-bottom:12px;font-size:clamp(1.75rem,4vw,2.4rem)}
+@media(min-width:761px){.ocean-site .about-section .personal-context{grid-template-columns:minmax(0,1fr) 220px}}
+.about-section h3 span{color:var(--ds-color-accent)}
+.about-principles{padding-block:28px}
+.about-section .personal-context p,.about-principles p{max-width:72ch;color:var(--ds-color-body)}
+.about-principles p{margin-top:12px}
 .ocean-site .contact-section{margin-top:34px}
 .ocean-site .contact-invitation h2{max-width:720px;margin:18px auto;color:var(--ds-color-text);font:400 clamp(26px,4vw,40px)/1.35 var(--ds-font-display);letter-spacing:-.5px}
 .ocean-site .contact-invitation>p{max-width:650px;margin:0 auto 24px;color:var(--ds-color-body);font-size:16px}
@@ -174,8 +177,7 @@
   .ocean-site #learn.teaching-section .section-head{padding-right:0}
   .ocean-site .teaching-section .section-head h2{font-size:28px}
   .ocean-site .teaching-section .video h3{min-height:0}
-  .ocean-site #approach.human-core{margin-top:40px;padding:30px 24px 60px}
-  .ocean-site .personal-contact{margin-top:45px;padding:28px 22px}
+  .ocean-site #approach.about-section{margin-top:40px;padding:28px 22px}
   .ocean-site .contact-section{margin-top:24px;padding:28px 20px}
   .ocean-site .contact-actions{flex-direction:column;gap:10px}
   .ocean-site .contact-actions .button{width:100%;max-width:420px}
