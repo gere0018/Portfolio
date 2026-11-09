@@ -24,6 +24,7 @@ body.ocean-site{background:var(--ds-color-ocean);color:var(--ds-color-text);--di
 .ocean-site .site-nav nav{display:flex;gap:24px;align-items:center}
 .ocean-site .site-nav nav a{color:var(--palette-teal-83);font-size:13px}
 .ocean-site .site-nav nav a[aria-current]{color:var(--ds-color-accent);text-decoration:underline;text-underline-offset:7px}
+@media(min-width:761px){.ocean-site .site-nav nav a.nav-contact.ds-button[aria-current]{color:var(--button-foreground)}}
 .ocean-site .brand-name{font-family:'Aclonica',sans-serif;font-weight:400}
 .brand-avatar{width:46px;height:46px;object-fit:cover;border-radius:50%;background:var(--ds-color-text);flex:0 0 auto}
 .ocean-site .immersive-hero{height:calc(100svh - 82px);min-height:600px;max-height:1000px;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:45px 7%;gap:20px}
